@@ -3,7 +3,4 @@
 	<output-test url="file://$MODULE_DIR$/out/test/ChemOntology"/>
 	<exclude-output/>
 	<contentEntry url="file://$MODULE_DIR$"/>
-	<lib name="lib" scope="COMPILE">
-		<relative-module-cls project-related="file://$PROJECT_DIR$/lib"/>
-	</lib>
 </component>

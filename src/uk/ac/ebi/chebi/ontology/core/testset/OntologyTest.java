@@ -28,7 +28,7 @@ public abstract class OntologyTest extends TestCase {
         initDefinition();
         IteratingMDLReader reader= null;
         try {
-            reader = new IteratingMDLReader(new FileReader(System.getProperty("user.dir")+("/src/com/chemhack/ontology/testset/"+fileName+(isMatch?"_positive":"_negative")+".sdf")), DefaultChemObjectBuilder.getInstance());
+            reader = new IteratingMDLReader(new FileReader(System.getProperty("user.dir")+("/src/uk/ac/ebi/chebi/ontology/core/testset/"+fileName+(isMatch?"_positive":"_negative")+".sdf")), DefaultChemObjectBuilder.getInstance());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -52,7 +52,7 @@ public abstract class OntologyTest extends TestCase {
             XMLParser parser=new XMLParser();
             List<Definition> definitions = null;
             try {
-                definitions=parser.parse(System.getProperty("user.dir")+("/src/com/chemhack/ontology/testset/"+fileName+".xml"));
+                definitions=parser.parse(System.getProperty("user.dir")+("/src/uk/ac/ebi/chebi/ontology/core/testset/"+fileName+".xml"));
             } catch (ParserConfigurationException e) {
                 e.printStackTrace();
             } catch (IOException e) {

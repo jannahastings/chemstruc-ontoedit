@@ -1,0 +1,103 @@
+package uk.ac.ebi.chebi.ontology.core.buffer;
+
+option java_package = "uk.ac.ebi.chebi.ontology.core.buffer";
+
+option java_outer_classname = "BufferedObjects";
+
+message Point2d {
+    required double x = 1;
+    required double y = 2;
+}
+
+message Point3d {
+    required double x = 1;
+    required double y = 2;
+    required double z = 3;
+}
+
+message AtomBuffer {
+    optional string symbol = 1;
+    optional int32 atomicNumber = 12;
+    optional string atomTypeName=2;
+    optional double charge=4;
+    optional int32 hydrogenCount = 14;
+    optional int32 atomIndex=7;
+    optional bool isAromatic=8;
+    optional bool isAttachmentPseudoAtom=9;
+    optional bool isPossibleAttachmentPoint=15;
+    optional Point2d point2d = 10;
+    optional Point3d point3d = 11;
+
+}
+
+
+message BondBuffer {
+    enum Order {
+        SINGLE = 1;
+        DOUBLE = 2;
+        TRIPLE = 3;
+        QUADRUPLE = 4;
+    }
+
+    repeated AtomBuffer atom = 1;
+}
+
+message AtomContainerBuffer {
+    repeated AtomBuffer atom = 1;
+    repeated BondBuffer bond = 2;
+    enum AtomContainerType{
+        skeleton=1;
+        attached_group=2;
+        arbitrary_part=3;
+    }
+    optional AtomContainerType atomContainerType=21;
+    optional bool isAromatic=8;
+    optional bool isBranch=18;
+    optional bool isLinear=28;
+    optional bool isCylic=38;
+    optional int32 charge=48;
+    optional int32 minRepeatCount=9;
+    optional int32 maxRepeatCount=19;
+
+    optional Formula formula=20;
+
+}
+message DefinitionUnit{
+    optional AtomContainerBuffer skeleton=2;
+    repeated AtomContainerBuffer attachedGroups=1;
+    repeated AtomContainerBuffer arbitrary_part=11;
+    repeated Attachment attachments=3;
+    optional Formula formula=20;
+}
+
+message Definition{
+    repeated DefinitionUnit definitionUnits=1;
+    optional Definition child1=2;
+    optional Definition child2=3;
+    optional string operator=4;
+}
+
+message Formula{
+    message Element{
+        optional string symbol=1;
+        optional string countExpression=2;
+    }
+    repeated Element elements=1;
+}
+
+message Attachment{
+    optional int32 attachGroupIndex=3;
+    optional int32 attachmentAtomIndex=1;
+    optional int32 skeletonAtomIndex=2;
+
+}
+
+message AttachPoint{
+    optional AtomBuffer attachAtom=1;
+    optional BondBuffer attachBond=2;
+    enum AttachPointType{
+        atomAttach=1;
+        bondAttach=2;
+    }
+}
+
