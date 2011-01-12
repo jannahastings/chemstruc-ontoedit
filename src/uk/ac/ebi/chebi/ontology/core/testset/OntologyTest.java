@@ -1,7 +1,7 @@
 package uk.ac.ebi.chebi.ontology.core.testset;
 
 import uk.ac.ebi.chebi.ontology.core.Definition;
-import uk.ac.ebi.chebi.ontology.core.definition.XMLParser;
+import uk.ac.ebi.chebi.ontology.core.parser.XMLParser;
 import uk.ac.ebi.chebi.ontology.core.matcher.IMatcher;
 import junit.framework.TestCase;
 import org.openscience.cdk.DefaultChemObjectBuilder;

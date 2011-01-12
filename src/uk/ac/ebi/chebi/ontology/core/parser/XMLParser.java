@@ -1,4 +1,4 @@
-package uk.ac.ebi.chebi.ontology.core.definition;
+package uk.ac.ebi.chebi.ontology.core.parser;
 
 import uk.ac.ebi.chebi.ontology.core.Definition;
 import uk.ac.ebi.chebi.ontology.core.matcher.FormulaMatcher;

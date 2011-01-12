@@ -2,6 +2,7 @@ package uk.ac.ebi.chebi.ontology.core;
 
 import uk.ac.ebi.chebi.ontology.core.matcher.IMatcher;
 
+@Deprecated
 public class Definition {
     private String id;
     private IMatcher matcher;
