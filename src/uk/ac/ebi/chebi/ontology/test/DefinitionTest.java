@@ -1,6 +1,5 @@
 package uk.ac.ebi.chebi.ontology.test;
 
-import com.thoughtworks.xstream.XStream;
 import junit.framework.TestCase;
 import org.openscience.cdk.DefaultChemObjectBuilder;
 import org.openscience.cdk.exception.InvalidSmilesException;

@@ -5,13 +5,8 @@ import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
 import com.google.gwt.core.client.GWT;
 import uk.ac.ebi.chebi.ontology.core.definition.Definition;
 
-/**
- * Created by IntelliJ IDEA.
- * User: chemhack
- * Date: 11-1-12
- * Time: 下午4:39
- * To change this template use File | Settings | File Templates.
- */
+import java.util.List;
+
 @RemoteServiceRelativePath("DefinitionService")
 public interface DefinitionService extends RemoteService {
     /**
@@ -27,4 +22,9 @@ public interface DefinitionService extends RemoteService {
     }
     public Definition fetchDefinition(String id);
 
+    /**
+     * List all definitions
+     * @return list of definitions, only meta data(name and comment)
+     */
+    public List<Definition> listAllDefinitions();
 }

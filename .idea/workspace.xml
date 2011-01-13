@@ -18,49 +18,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a16b50f7-1e3a-478d-a6c5-2e172317eecc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/convertor/CDKConverter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/Definition.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/IDefinitionPart.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/formula/Element.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/formula/Formula.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/fragment/ArbitraryPart.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/fragment/Atom.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/fragment/AttachPoint.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/fragment/AttachedGroup.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/fragment/Fragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/logical/And.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/logical/LogicalOperator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/logical/Or.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/query/EnumQuery.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/query/NumericQuery.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/util/XStreamUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/test/CDKConverterTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/test/DefinitionTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/Ontology.gwt.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/DefinitionService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/DefinitionServiceAsync.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/Ontology.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/server/DefinitionServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/war/Ontology.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/war/Ontology.html" />
-      <change type="DELETED" beforePath="C:\Users\chemhack\IdeaProjects\ChemOntology\src\uk\ac\ebi\chebi\ontology\core\buffer\BufferedObjects.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\chemhack\IdeaProjects\ChemOntology\src\uk\ac\ebi\chebi\ontology\core\buffer\generator\CodeGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\chemhack\IdeaProjects\ChemOntology\src\uk\ac\ebi\chebi\ontology\core\buffer\generator\cdkobjects.proto" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\chemhack\IdeaProjects\ChemOntology\src\uk\ac\ebi\chebi\ontology\web\sample\Sample.gwt.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\chemhack\IdeaProjects\ChemOntology\src\uk\ac\ebi\chebi\ontology\web\sample\client\DefinitionClass.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\chemhack\IdeaProjects\ChemOntology\src\uk\ac\ebi\chebi\ontology\web\sample\client\Sample.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\chemhack\IdeaProjects\ChemOntology\src\uk\ac\ebi\chebi\ontology\web\sample\client\SampleService.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\chemhack\IdeaProjects\ChemOntology\src\uk\ac\ebi\chebi\ontology\web\sample\client\SampleServiceAsync.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\chemhack\IdeaProjects\ChemOntology\src\uk\ac\ebi\chebi\ontology\web\sample\server\SampleServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\chemhack\IdeaProjects\ChemOntology\war\Sample.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\chemhack\IdeaProjects\ChemOntology\war\Sample.html" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\chemhack\IdeaProjects\ChemOntology\src\uk\ac\ebi\chebi\ontology\core\definition\XMLParser.java" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/parser/XMLParser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/jettison-1.0.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/stax-1.2.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/stax-api-1.0.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/OntologyList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/OntologyList.ui.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/Definition.java" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/Definition.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/matcher/IMatcher.java" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/matcher/IMatcher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/testset/OntologyTest.java" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/testset/OntologyTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/query/EnumQuery.java" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/query/EnumQuery.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/util/Convertor.java" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/util/Convertor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/war/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/test/DefinitionTest.java" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/test/DefinitionTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/DefinitionService.java" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/DefinitionService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/DefinitionServiceAsync.java" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/DefinitionServiceAsync.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/server/DefinitionServiceImpl.java" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/server/DefinitionServiceImpl.java" />
     </list>
     <ignored path="$USER_HOME$/.grails/" />
     <ignored path=".idea/workspace.xml" />
@@ -126,66 +95,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Ontology.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/Ontology.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="7" selection-start="399" selection-end="399" vertical-scroll-proportion="0.44072166">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CDKConverterTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/test/CDKConverterTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="62" selection-start="712" selection-end="712" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CDKConverter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/convertor/CDKConverter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="28" selection-start="806" selection-end="806" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#fromCDKBondOrder#0;class#CDKConverter#0" expanded="false" />
-                <element signature="method#toCDKBondOrder#0;class#CDKConverter#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefinitionTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/test/DefinitionTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="56" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Definition.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/Definition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="25" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="XStreamUtil.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="XStreamUtil.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/util/XStreamUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="89" selection-start="810" selection-end="810" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="22" column="33" selection-start="1022" selection-end="1022" vertical-scroll-proportion="0.7345361">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OntologyTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/testset/OntologyTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="38" selection-start="2090" selection-end="2090" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -204,22 +127,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/webinterface/client/Ontology.java" />
-        <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/Ontology.gwt.xml" />
-        <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/DefinitionServiceAsync.java" />
-        <option value="$PROJECT_DIR$/war/Ontology.html" />
         <option value="$PROJECT_DIR$/war/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/Ontology.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/Definition.java" />
-        <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/DefinitionService.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/formula/Element.java" />
-        <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/server/DefinitionServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/convertor/CDKConverter.java" />
-        <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/util/XStreamUtil.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/test/DefinitionTest.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/DefinitionEditor.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/DefinitionList.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/DefinitionBinder.java" />
+        <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/DefinitionService.java" />
+        <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/OntologyList.java" />
+        <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/server/DefinitionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/jchempaint/build.xml" />
+        <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/query/EnumQuery.java" />
+        <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/util/Convertor.java" />
+        <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/util/XStreamUtil.java" />
       </list>
     </option>
   </component>
@@ -260,8 +183,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Favorites" />
       <pane id="Scope" />
+      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -290,121 +213,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="war" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChemOntology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChemOntology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="war" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChemOntology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChemOntology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ontology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChemOntology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChemOntology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ontology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChemOntology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChemOntology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ontology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChemOntology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChemOntology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ontology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -427,6 +240,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChemOntology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChemOntology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ontology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -478,7 +317,55 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="convertor" />
+              <option name="myItemId" value="definition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fragment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChemOntology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChemOntology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ontology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="definition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="formula" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChemOntology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChemOntology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -773,19 +660,20 @@
       <recent name="com.chemhack.ontology.matcher.skeleton" />
       <recent name="com.chemhack.ontology.matcher" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\chemhack\IdeaProjects\ChemOntology\lib" />
+      <recent name="C:\Users\chemhack\IdeaProjects\ChemOntology\src\com\chemhack\ontology\testset" />
+    </key>
     <key name="GwtCreateUiBinderDialog.RecentRootElementType">
       <recent name="com.google.gwt.dom.client.DivElement" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\chemhack\IdeaProjects\ChemOntology\src\com\chemhack\ontology\testset" />
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="uk.ac.ebi.chebi.ontology.core" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="uk.ac.ebi.chebi.ontology.core.definition.query" />
       <recent name="uk.ac.ebi.chebi.ontology.core.definition.fragment" />
       <recent name="com.chemhack.ontology.matcher.skeleton" />
-    </key>
-    <key name="ImportMappingsDialog.RecentPackages">
-      <recent name="uk.ac.ebi.chebi.ontology.core" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.DefinitionTest">
@@ -1187,8 +1075,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="66" y="-8" width="1542" height="916" extended-state="0" />
-    <editor active="false" />
+    <frame x="66" y="-8" width="1542" height="916" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33017817" sideWeight="0.7382979" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1198,14 +1086,14 @@
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.325" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32368422" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25745258" sideWeight="0.18421052" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25745258" sideWeight="0.19078948" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39955482" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25745258" sideWeight="0.35263157" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25745258" sideWeight="0.34605262" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4526316" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1289,100 +1177,112 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/DefinitionService.java">
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/Definition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="19" selection-start="960" selection-end="960" vertical-scroll-proportion="0.0">
+        <state line="0" column="48" selection-start="8" selection-end="48" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/query/EnumQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="25" selection-start="110" selection-end="110" vertical-scroll-proportion="0.079943895">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/formula/Formula.java">
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/logical/And.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="162" selection-end="162" vertical-scroll-proportion="0.3089431">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/formula/Element.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="44" selection-start="179" selection-end="202" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/Ontology.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="44" selection-start="214" selection-end="214" vertical-scroll-proportion="-4.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="64" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0">
+        <state line="2" column="13" selection-start="72" selection-end="72" vertical-scroll-proportion="0.053295933">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/server/DefinitionServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="8" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0">
+        <state line="2" column="0" selection-start="46" selection-end="46" vertical-scroll-proportion="0.053295933">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/convertor/CDKConverter.java">
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/OntologyList.ui.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="28" selection-start="806" selection-end="806" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#fromCDKBondOrder#0;class#CDKConverter#0" expanded="false" />
-            <element signature="method#toCDKBondOrder#0;class#CDKConverter#0" expanded="false" />
-          </folding>
+        <state line="3" column="5" selection-start="130" selection-end="130" vertical-scroll-proportion="0.07786885">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/test/CDKConverterTest.java">
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/DefinitionService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="62" selection-start="712" selection-end="712" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="28" column="16" selection-start="992" selection-end="992" vertical-scroll-proportion="0.5969945">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/OntologyList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="8" selection-start="488" selection-end="488" vertical-scroll-proportion="0.3114754">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/fragment/Bond.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="19" selection-start="331" selection-end="331" vertical-scroll-proportion="0.3114754">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/fragment/Atom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="73" selection-end="73" vertical-scroll-proportion="0.05191257">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/logical/LogicalOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="163" selection-end="163" vertical-scroll-proportion="0.12978142">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/formula/Element.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="10" selection-start="69" selection-end="69" vertical-scroll-proportion="0.05191257">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/fragment/AttachPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="33" selection-start="142" selection-end="142" vertical-scroll-proportion="0.10382514">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/formula/Formula.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="162" selection-end="162" vertical-scroll-proportion="0.10382514">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/testset/OntologyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="38" selection-start="2090" selection-end="2090" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/util/Convertor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="25" selection-start="545" selection-end="545" vertical-scroll-proportion="0.14690721">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/util/XStreamUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="89" selection-start="810" selection-end="810" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/test/DefinitionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="56" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/Definition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="25" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/Ontology.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="7" selection-start="399" selection-end="399" vertical-scroll-proportion="0.44072166">
+        <state line="22" column="33" selection-start="1022" selection-end="1022" vertical-scroll-proportion="0.7345361">
           <folding />
         </state>
       </provider>
