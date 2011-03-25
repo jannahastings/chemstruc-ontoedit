@@ -3,10 +3,18 @@
 <module>
 
     <inherits name='com.google.gwt.user.User'/>
+    <inherits name="com.google.gwt.user.theme.standard.Standard"/>
+    <inherits name="uk.ac.ebi.chebi.ontology.core.Definition"/>
+    <inherits name='com.google.gwt.gwtai.applet.AppletIntegration' />
+
     <source path="client"/>
-    <source path="uk.ac.ebi.chebi.ontology.core.definition"/>
 
     <entry-point class='uk.ac.ebi.chebi.ontology.web.client.Ontology'/>
     <servlet path="/DefinitionService" class="uk.ac.ebi.chebi.ontology.web.server.DefinitionServiceImpl"/>
+
+    <set-configuration-property name="jarlinker.name" value="GwtAI-Demo.jar" />
+    <!--<set-configuration-property name="jarlinker.keystore" value=".keystore" />-->
+    <!--<set-configuration-property name="jarlinker.alias" value="Adrian Buerki" />-->
+    <!--<set-configuration-property name="jarlinker.storepass" value="gwtaigwtai" />-->
 
 </module>

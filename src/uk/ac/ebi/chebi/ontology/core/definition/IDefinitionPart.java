@@ -1,5 +1,7 @@
 package uk.ac.ebi.chebi.ontology.core.definition;
 
-public interface IDefinitionPart {
+import java.io.Serializable;
+
+public interface IDefinitionPart extends Serializable {
 
 }

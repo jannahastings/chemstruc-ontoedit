@@ -11,4 +11,5 @@
       <servlet-name>definitionServiceImpl</servlet-name>
       <url-pattern>/uk.ac.ebi.chebi.ontology.web.Ontology/DefinitionService</url-pattern>
     </servlet-mapping>
+
 </web-app>

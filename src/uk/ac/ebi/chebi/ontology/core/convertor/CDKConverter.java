@@ -1,6 +1,5 @@
 package uk.ac.ebi.chebi.ontology.core.convertor;
 
-
 import org.openscience.cdk.AtomContainer;
 import org.openscience.cdk.CDKConstants;
 import org.openscience.cdk.exception.CDKException;
@@ -16,7 +15,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Class to con
+ * Class to convert CDK objects and plain data objects.
+ * @see uk.ac.ebi.chebi.ontology.core.definition
  */
 public class CDKConverter {
     public SimpleAtomContainer fromCDKAtomContainer(IAtomContainer ac){
@@ -67,7 +67,7 @@ public class CDKConverter {
         AtomContainerManipulator.percieveAtomTypesAndConfigureUnsetProperties(ac);
         return ac;
     }
-    public Bond.Order fromCDKBondOrder(IBond.Order cdkBondOrder){
+    private Bond.Order fromCDKBondOrder(IBond.Order cdkBondOrder){
         if(cdkBondOrder==null)return null;
         switch (cdkBondOrder){
             case SINGLE:
@@ -82,7 +82,7 @@ public class CDKConverter {
                 return null;
         }
     }
-    public IBond.Order toCDKBondOrder(Bond.Order bonOrder){
+    private IBond.Order toCDKBondOrder(Bond.Order bonOrder){
         if(bonOrder==null)return null;
         switch (bonOrder){
             case SINGLE:

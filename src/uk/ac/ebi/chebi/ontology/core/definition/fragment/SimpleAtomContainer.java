@@ -12,6 +12,6 @@ public class SimpleAtomContainer {
     public Boolean isAromatic;
     public Boolean isBranch;
     public Boolean isLinear;
-    public Boolean isCylic;
+    public Boolean isCyclic;
     public Double totalCharge;
 }

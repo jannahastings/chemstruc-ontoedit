@@ -1,0 +1,26 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'
+             xmlns:o='urn:import:uk.ac.ebi.chebi.ontology.web.client.ui'
+        >
+    <g:StackLayoutPanel unit='EM'>
+        <g:stack>
+            <g:header size='2'>
+                    Classes
+            </g:header>
+            <o:ClassList ui:field="classList" />
+        </g:stack>
+        <g:stack>
+            <g:header size='2'>
+                    Jobs
+            </g:header>
+            <g:Label>Running Jobs</g:Label>
+        </g:stack>
+        <g:stack>
+            <g:header size='2'>
+                    Settings
+            </g:header>
+            <g:Label>Settings</g:Label>
+        </g:stack>
+
+    </g:StackLayoutPanel>
+</ui:UiBinder>

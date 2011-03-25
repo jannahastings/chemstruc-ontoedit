@@ -5,3 +5,16 @@ body {
     font-size: small;
     margin: 8px;
 }
+.float-left{
+    float:left;
+}
+.margin-left-5px{
+    margin-left:5px;
+}
+.margin-5px{
+    margin:5px;
+}
+.fullSize{
+    height:100%;
+    width:100%;
+}

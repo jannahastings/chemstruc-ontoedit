@@ -9,4 +9,6 @@ public interface DefinitionServiceAsync {
     void fetchDefinition(String id, AsyncCallback<Definition> async);
 
     void listAllDefinitions(AsyncCallback<List<Definition>> async);
+
+    void saveDefinition(Definition definition, AsyncCallback<Void> async);
 }

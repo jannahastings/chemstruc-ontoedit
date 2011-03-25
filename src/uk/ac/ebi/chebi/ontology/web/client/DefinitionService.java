@@ -27,4 +27,6 @@ public interface DefinitionService extends RemoteService {
      * @return list of definitions, only meta data(name and comment)
      */
     public List<Definition> listAllDefinitions();
+
+    public void saveDefinition(Definition definition);
 }
