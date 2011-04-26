@@ -1,0 +1,17 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'
+        xmlns:c="urn:import:com.google.gwt.user.cellview.client">
+    <ui:style>
+      .cellTable {
+        border-bottom: 1px solid #ccc;
+        text-align: left;
+        margin-bottom: 4px;
+      }
+    </ui:style>
+
+    <g:HTMLPanel>
+        <c:CellTable ui:field="cellTable">
+
+        </c:CellTable>
+    </g:HTMLPanel>
+</ui:UiBinder>

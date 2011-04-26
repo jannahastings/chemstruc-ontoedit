@@ -1,0 +1,24 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'
+            xmlns:c="urn:import:com.google.gwt.user.cellview.client"
+        >
+    <g:HTMLPanel>
+        <p>ChEBI name:<g:Label ui:field="lbName"></g:Label></p>
+        <p>ChEBI id:<g:Label ui:field="lbId"></g:Label></p>
+        <p>Text Definition:<g:Label ui:field="lbTextDefinition"></g:Label></p>
+        <g:HorizontalPanel>
+            <g:HTMLPanel>
+                <h2>Classified compounds that match</h2>
+                <c:CellList ui:field="listClassifiedMatch"></c:CellList>
+            </g:HTMLPanel>
+            <g:HTMLPanel>
+                <h2>Classified compounds that don't match</h2>
+                <c:CellList ui:field="listClassifiedMismatch"></c:CellList>
+            </g:HTMLPanel>
+            <g:HTMLPanel>
+                <h2>Unclassified compounds that match</h2>
+                <c:CellList ui:field="listUnclassifiedMatch"></c:CellList>
+            </g:HTMLPanel>
+        </g:HorizontalPanel>
+    </g:HTMLPanel>
+</ui:UiBinder>

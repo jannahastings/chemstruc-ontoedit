@@ -30,6 +30,7 @@
             <g:HTMLPanel>
                 <p>
                     <g:Button ui:field="btSave">Save</g:Button>
+                    <g:Button ui:field="btPreview">Preview</g:Button>
                 </p>
             </g:HTMLPanel>
         </g:south>

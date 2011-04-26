@@ -43,6 +43,8 @@ public class DefinitionEditor extends Composite {
     Button btSave;
     @UiField
     JCPWidget jcpWidget;
+    @UiField
+    Button btPreview;
 
 
     public DefinitionEditor() {
@@ -59,7 +61,7 @@ public class DefinitionEditor extends Composite {
         if(definition.id==null){ //Enable edit if is a new class
             tbId.setEnabled(true);
         }else{
-            tbId.setText(definition.id);
+            tbId.setText(String.valueOf(definition.id));
             tbId.setEnabled(false);
         }
         tbName.setText(definition.name);
@@ -67,20 +69,20 @@ public class DefinitionEditor extends Composite {
     }
 
     private void updateDataObject() {
-        definition.id=tbId.getText();
+        definition.id= Integer.valueOf(tbId.getText());
         definition.name = tbName.getText();
         definition.comment = taComment.getText();
 //        definition.rootDefinition=jcpWidget.getApplet().getSkeleton();
 //        Window.alert(definition.rootDefinition.toString());
-        jcpWidget.getApplet().getTestString(new AsyncCallback<String>() {
-            public void onFailure(Throwable throwable) {
-                Window.alert(throwable.toString());
-            }
-
-            public void onSuccess(String s) {
-                Window.alert(s);
-            }
-        });
+//        jcpWidget.getApplet().getTestString(new AsyncCallback<String>() {
+//            public void onFailure(Throwable throwable) {
+//                Window.alert(throwable.toString());
+//            }
+//
+//            public void onSuccess(String s) {
+//                Window.alert(s);
+//            }
+//        });
     }
 
     @UiHandler("btSave")
@@ -97,6 +99,12 @@ public class DefinitionEditor extends Composite {
 //                Window.alert("Saved");
             }
         });
+    }
+
+    @UiHandler("btPreview")
+    void handleBTPreviewClick(ClickEvent event){
+        updateDataObject();
+        Ontology.App.getInstance().getMainFrame().addClosableTab(new DefinitionPreview(),"Preview"+definition.id);
     }
 
 }

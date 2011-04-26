@@ -1,0 +1,17 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'
+        xmlns:o="urn:import:uk.ac.ebi.chebi.ontology.web.client.ui">
+        <g:HTMLPanel>
+                <g:DecoratorPanel>
+                    <g:HTMLPanel>
+                        <h3>Enter a name or formula to search for it</h3>
+                        <g:TextBox ui:field="tbQuery">allen*</g:TextBox>
+                        <g:Button ui:field="btSearch">Search</g:Button>
+                    </g:HTMLPanel>
+                </g:DecoratorPanel>
+                <g:SimplePanel ui:field="resultPanel">
+
+                </g:SimplePanel>
+                <!--<o:SearchResultTable ui:field="resultTable" />-->
+        </g:HTMLPanel>
+</ui:UiBinder>

@@ -8,5 +8,10 @@
 
             </g:FlowPanel>
         </g:tab>
+        <g:tab>
+            <g:header>Search ChEBI</g:header>
+            <o:SearchPanel />
+        </g:tab>
+
     </g:TabLayoutPanel>
 </ui:UiBinder>

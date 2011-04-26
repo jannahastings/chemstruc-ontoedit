@@ -18,57 +18,68 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a16b50f7-1e3a-478d-a6c5-2e172317eecc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/gwtai-client.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/gwtai-core.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/inchi-1.0.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/war/gwtai-client.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/war/gwtai-core.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/openscience/cdk/ontology/AttachedGroup.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/openscience/cdk/ontology/FragmentGroup.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/openscience/cdk/ontology/IFragmentGroup.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/openscience/jchempaint/action/FragmentGroupAction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/openscience/jchempaint/applet/OntologyEditorApplet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/openscience/jchempaint/ontology/FragmentGroupHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/openscience/jchempaint/renderer/generators/FragmentGroupGenerator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/Definition.gwt.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/matcher/DefinitionMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/matcher/fragment/SkeletonMatcher.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/Ontology.ui.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/applet/JCPApplet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/applet/JCPAppletAsync.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/ClassList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/ClassList.ui.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/DefinitionEditor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/DefinitionEditor.ui.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/JCPWidget.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/MainFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/MainFrame.ui.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/SideBar.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/SideBar.ui.xml" />
-      <change type="DELETED" beforePath="C:\Users\chemhack\IdeaProjects\ChemOntology\src\uk\ac\ebi\chebi\ontology\core\definition\fragment\AttachPoint.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\chemhack\IdeaProjects\ChemOntology\src\uk\ac\ebi\chebi\ontology\web\client\ui\OntologyList.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\chemhack\IdeaProjects\ChemOntology\src\uk\ac\ebi\chebi\ontology\web\client\ui\OntologyList.ui.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ant.xml" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/_0.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/_0_2.del" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/_1.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/_2.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/_2_1.del" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/_3.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/segments.gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/segments_5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/kryo-1.04-all.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/war/xstream-1.3.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/ChemOntology_GWT.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/gwt_user__2_.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lucene.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/options.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/openscience/cdk/ontology/FragmentGroupTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/table.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/chebi/ChEBIInterface.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/chebi/ChEBICompound.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/match/MatchingResult.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/engine/MatchEngine.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/engine/cache/CacheProvider.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/engine/cache/ExtendedKryo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/engine/cache/IndexGenerator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/engine/cache/IndexItem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/engine/cache/ObjectBuffer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/matcher/fragment/ArbitraryPartMatcher.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/testset/MatchTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/util/DatabaseUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/util/IndexReaderTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/DefinitionPreview.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/DefinitionPreview.ui.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/SearchPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/SearchPanel.ui.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/SearchResultTable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/SearchResultTable.ui.xml" />
+      <change type="DELETED" beforePath="C:\Users\chemhack\IdeaProjects\ChemOntology\lib\gwt-user.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\chemhack\IdeaProjects\ChemOntology\lib\gwtai-client.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\chemhack\IdeaProjects\ChemOntology\lib\gwtai-core.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\chemhack\IdeaProjects\ChemOntology\src\uk\ac\ebi\chebi\ontology\web\client\applet\JCPAppletAsync.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\chemhack\IdeaProjects\ChemOntology\war\gwtai-client.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\chemhack\IdeaProjects\ChemOntology\war\gwtai-core.jar" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.classpath" afterPath="$PROJECT_DIR$/.classpath" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChemOntology.iml" afterPath="$PROJECT_DIR$/ChemOntology.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/openscience/cdk/ontology/AttachedGroup.java" afterPath="$PROJECT_DIR$/src/org/openscience/cdk/ontology/AttachedGroup.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/openscience/jchempaint/applet/OntologyEditorApplet.java" afterPath="$PROJECT_DIR$/src/org/openscience/jchempaint/applet/OntologyEditorApplet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/MatchEngine.java" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/MatchEngine.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/convertor/CDKConverter.java" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/convertor/CDKConverter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/Definition.java" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/Definition.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/IDefinitionPart.java" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/IDefinitionPart.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/fragment/Atom.java" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/fragment/Atom.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/fragment/AttachedGroup.java" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/fragment/AttachedGroup.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/fragment/Bond.java" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/fragment/Bond.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/fragment/Fragment.java" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/fragment/Fragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/fragment/SimpleAtomContainer.java" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/fragment/SimpleAtomContainer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/fragment/Skeleton.java" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/fragment/Skeleton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/query/NumericQuery.java" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/query/NumericQuery.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/matcher/DefinitionMapper.java" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/matcher/DefinitionMapper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/Ontology.gwt.xml" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/Ontology.gwt.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/DefinitionService.java" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/DefinitionService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/DefinitionServiceAsync.java" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/DefinitionServiceAsync.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/Ontology.java" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/Ontology.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/Ontology.ui.xml" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/Ontology.ui.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/applet/JCPApplet.java" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/applet/JCPApplet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/DefinitionEditor.java" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/DefinitionEditor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/DefinitionEditor.ui.xml" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/DefinitionEditor.ui.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/JCPWidget.java" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/JCPWidget.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/MainFrame.java" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/MainFrame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/MainFrame.ui.xml" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/MainFrame.ui.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/server/DefinitionServiceImpl.java" afterPath="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/server/DefinitionServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/Ontology.css" afterPath="$PROJECT_DIR$/war/Ontology.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/Ontology.html" afterPath="$PROJECT_DIR$/war/Ontology.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/war/WEB-INF/web.xml" />
     </list>
     <ignored path="$USER_HOME$/.grails/" />
     <ignored path=".idea/workspace.xml" />
@@ -135,73 +146,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FragmentGroupAction.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/openscience/jchempaint/action/FragmentGroupAction.java">
+      <file leaf-file-name="DefinitionMapper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/matcher/DefinitionMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="12" selection-start="4531" selection-end="4531" vertical-scroll-proportion="0.0">
+            <state line="26" column="12" selection-start="1022" selection-end="1022" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RGroupHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/openscience/jchempaint/rgroups/RGroupHandler.java">
+      <file leaf-file-name="DefinitionEditor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/DefinitionEditor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="338" column="16" selection-start="12313" selection-end="12313" vertical-scroll-proportion="0.0">
+            <state line="78" column="35" selection-start="2402" selection-end="2402" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FragmentGroup.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/openscience/cdk/ontology/FragmentGroup.java">
+      <file leaf-file-name="DefinitionPreview.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/DefinitionPreview.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="31" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0">
+            <state line="35" column="13" selection-start="1340" selection-end="1340" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UniversalIsomorphismTester.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://C:/work/lib-jars/cdk-src+libs-1.3.7/src/main/org/openscience/cdk/isomorphism/UniversalIsomorphismTester.java">
+      <file leaf-file-name="Definition.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/Definition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="13" selection-start="5340" selection-end="5340" vertical-scroll-proportion="-1.3464235">
+            <state line="9" column="151" selection-start="245" selection-end="245" vertical-scroll-proportion="0.42857143">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JChemPaintResources.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/openscience/jchempaint/resources/JChemPaintResources.properties">
+      <file leaf-file-name="SearchResultTable.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/SearchResultTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="141" column="0" selection-start="6675" selection-end="6675" vertical-scroll-proportion="0.0">
+            <state line="100" column="0" selection-start="3869" selection-end="3869" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JCPGUI_applet.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/openscience/jchempaint/resources/JCPGUI_applet.properties">
+      <file leaf-file-name="ArbitraryPartMatcher.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/matcher/fragment/ArbitraryPartMatcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="18" selection-start="5208" selection-end="5226" vertical-scroll-proportion="0.0">
+            <state line="22" column="147" selection-start="878" selection-end="878" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JCPMenuTextMaker.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/openscience/jchempaint/JCPMenuTextMaker.java">
+      <file leaf-file-name="IndexGenerator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/engine/cache/IndexGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="361" column="62" selection-start="19678" selection-end="19678" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EnterElementSwingModule.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/openscience/jchempaint/dialog/EnterElementSwingModule.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="39" selection-start="4169" selection-end="4169" vertical-scroll-proportion="0.0">
+            <state line="87" column="6" selection-start="4309" selection-end="4309" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -221,22 +223,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/org/openscience/cdk/ontology/IAttachedGroup.java" />
-        <option value="$PROJECT_DIR$/src/org/openscience/cdk/ontology/AttachedGroup.java" />
-        <option value="C:/work/lib-jars/cdk-src+libs-1.3.7/src/main/org/openscience/cdk/isomorphism/matchers/RGroupQuery.java" />
-        <option value="$PROJECT_DIR$/src/org/openscience/jchempaint/controller/IChemModelRelay.java" />
-        <option value="$PROJECT_DIR$/src/org/openscience/jchempaint/resources/JChemPaintResources.properties" />
-        <option value="$PROJECT_DIR$/src/org/openscience/jchempaint/ontology/FragmentGroupHandler.java" />
-        <option value="$PROJECT_DIR$/src/org/openscience/jchempaint/RenderPanel.java" />
-        <option value="$PROJECT_DIR$/src/org/openscience/cdk/ontology/IFragmentGroup.java" />
-        <option value="$PROJECT_DIR$/src/org/openscience/jchempaint/renderer/generators/FragmentGroupGenerator.java" />
-        <option value="$PROJECT_DIR$/src/org/openscience/jchempaint/action/NewAction.java" />
-        <option value="$PROJECT_DIR$/src/org/openscience/jchempaint/action/OpenAction.java" />
-        <option value="$PROJECT_DIR$/src/org/openscience/jchempaint/controller/ControllerHub.java" />
-        <option value="$PROJECT_DIR$/src/org/openscience/cdk/ontology/FragmentGroup.java" />
-        <option value="$PROJECT_DIR$/src/org/openscience/jchempaint/action/FragmentGroupAction.java" />
-        <option value="$PROJECT_DIR$/src/org/openscience/jchempaint/resources/JCPGUI_applet.properties" />
-        <option value="$PROJECT_DIR$/src/org/openscience/jchempaint/JCPMenuTextMaker.java" />
+        <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/MatchEngine.java" />
+        <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/engine/cache/CacheReader.java" />
+        <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/matcher/fragment/ArbitaryPartMatcher.java" />
+        <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/matcher/fragment/ArbitraryPartMatcher.java" />
+        <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/matcher/DefinitionMapper.java" />
+        <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/engine/cache/CacheProvider.java" />
+        <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/convertor/CDKConverter.java" />
+        <option value="/ChEBI_Local" />
+        <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/engine/cache/IndexGenerator.java" />
+        <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/engine/MatchEngine.java" />
+        <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/DefinitionEditor.ui.xml" />
+        <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/SearchResultTable.java" />
+        <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/DefinitionPreview.ui.xml" />
+        <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/DefinitionEditor.java" />
+        <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/DefinitionPreview.java" />
+        <option value="$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/Definition.java" />
       </list>
     </option>
   </component>
@@ -265,7 +267,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="PackagesPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages ProjectPane="false" />
       <showMembers />
       <showModules />
@@ -277,6 +279,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -288,19 +291,9 @@
               <option name="myItemId" value="ChemOntology" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ChemOntology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChemOntology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uk.ac.ebi.chebi.ontology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+              <option name="myItemId" value="Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -313,33 +306,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="uk.ac.ebi.chebi.ontology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+              <option name="myItemId" value="Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChemOntology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChemOntology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uk.ac.ebi.chebi.ontology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="definition" />
+              <option name="myItemId" value="com" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -353,19 +324,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="uk.ac.ebi.chebi.ontology" />
+              <option name="myItemId" value="Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="definition" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="formula" />
+              <option name="myItemId" value="google.gwt" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -379,7 +346,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="org.openscience" />
+              <option name="myItemId" value="Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="google.gwt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -393,16 +372,73 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="org.openscience" />
+              <option name="myItemId" value="Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cdk.ontology" />
+              <option name="myItemId" value="google.gwt" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cellview" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChemOntology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChemOntology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="google.gwt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cellview" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChemOntology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChemOntology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -410,6 +446,10 @@
               <option name="myItemId" value="ChemOntology" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -418,6 +458,108 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ChemOntology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChemOntology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChemOntology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="war" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChemOntology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChemOntology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChemOntology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChemOntology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ontology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChemOntology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChemOntology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ontology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChemOntology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChemOntology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ontology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -453,37 +595,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="openscience" />
+              <option name="myItemId" value="ontology" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jchempaint" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChemOntology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChemOntology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openscience" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jchempaint" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rgroups" />
+              <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -498,86 +614,67 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openscience" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jchempaint" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChemOntology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChemOntology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openscience" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jchempaint" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="renderer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChemOntology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChemOntology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openscience" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ontology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="definition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChemOntology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChemOntology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ontology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="definition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chebi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="false" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="OverrideImplement.combined" value="true" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="GenerateAntBuildDialog.generateSingleFile" value="true" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
     <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="false" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -592,8 +689,8 @@
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -608,6 +705,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="uk.ac.ebi.chebi.ontology.core.matcher.fragment" />
       <recent name="org.openscience.jchempaint.renderer.generators" />
       <recent name="com.chemhack.ontology.testset" />
       <recent name="com.chemhack.ontology.matcher.skeleton" />
@@ -615,17 +713,17 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\chemhack\IdeaProjects\ChemOntology\war" />
-      <recent name="C:\Users\chemhack\IdeaProjects\ChemOntology\lib" />
-      <recent name="C:\Users\chemhack\IdeaProjects\ChemOntology\jchempaint-ontology\src" />
-      <recent name="C:\Users\chemhack\IdeaProjects\ChemOntology\src\uk\ac\ebi\chebi\ontology\web\client" />
-      <recent name="C:\Users\chemhack\IdeaProjects\ChemOntology\src\com\chemhack\ontology\testset" />
+      <recent name="C:\Users\chemhack\IdeaProjects\ChemOntology\src" />
+      <recent name="C:\Users\chemhack\IdeaProjects\ChemOntology\src\uk\ac\ebi\chebi\ontology\core\engine\cache" />
+      <recent name="C:\Users\chemhack\IdeaProjects\ChemOntology\src\uk\ac\ebi\chebi\ontology\core" />
+      <recent name="C:\Users\chemhack\IdeaProjects\ChemOntology" />
     </key>
     <key name="GwtCreateUiBinderDialog.RecentRootElementType">
+      <recent name="com.google.gwt.user.client.ui.HTMLPanel" />
+      <recent name="com.google.gwt.user.client.ui.Composite" />
       <recent name="com.google.gwt.user.client.ui.VerticalPanel" />
       <recent name="com.google.gwt.user.client.ui.TabLayoutPanel" />
       <recent name="com.google.gwt.user.client.ui.DockLayoutPanel" />
-      <recent name="com.google.gwt.user.client.ui.StackLayoutPanel" />
-      <recent name="com.google.gwt.dom.client.DivElement" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.openscience.cdk.ontology" />
@@ -639,15 +737,21 @@
       <recent name="com.chemhack.ontology.matcher.skeleton" />
     </key>
   </component>
-  <component name="RunManager" selected="Applet.JChemPaintEditorApplet">
-    <configuration default="false" name="XStreamDemo" type="Application" factoryName="Application" temporary="true">
+  <component name="RunManager" selected="Application.MatchEngine">
+    <configuration default="false" name="Default" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console" temporary="true">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
+      <method />
+    </configuration>
+    <configuration default="false" name="IndexReaderTest" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false">
         <pattern>
           <option name="PATTERN" value="uk.ac.ebi.chebi.ontology.core.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="uk.ac.ebi.chebi.ontology.core.util.XStreamDemo" />
+      <option name="MAIN_CLASS_NAME" value="uk.ac.ebi.chebi.ontology.core.util.IndexReaderTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -662,93 +766,9 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="CDKConverterTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false">
-        <pattern>
-          <option name="PATTERN" value="uk.ac.ebi.chebi.ontology.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration default="false" name="OntologyEditorApplet" type="Applet" factoryName="Applet" temporary="true">
       <module name="ChemOntology" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="uk.ac.ebi.chebi.ontology.test" />
-      <option name="MAIN_CLASS_NAME" value="uk.ac.ebi.chebi.ontology.test.CDKConverterTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="PenicillinTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false">
-        <pattern>
-          <option name="PATTERN" value="uk.ac.ebi.chebi.ontology.core.testset.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ChemOntology" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="uk.ac.ebi.chebi.ontology.core.testset" />
-      <option name="MAIN_CLASS_NAME" value="uk.ac.ebi.chebi.ontology.core.testset.PenicillinTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="PyridinesTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false">
-        <pattern>
-          <option name="PATTERN" value="uk.ac.ebi.chebi.ontology.core.testset.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ChemOntology" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="uk.ac.ebi.chebi.ontology.core.testset" />
-      <option name="MAIN_CLASS_NAME" value="uk.ac.ebi.chebi.ontology.core.testset.PyridinesTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="JChemPaintEditorApplet" type="Applet" factoryName="Applet" temporary="true">
-      <module name="ChemOntology" />
-      <option name="MAIN_CLASS_NAME" value="org.openscience.jchempaint.applet.JChemPaintEditorApplet" />
+      <option name="MAIN_CLASS_NAME" value="org.openscience.jchempaint.applet.OntologyEditorApplet" />
       <option name="HTML_FILE_NAME" />
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -757,23 +777,53 @@
       <option name="VM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="58738" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="true" type="PhpRunConfigurationType" factoryName="PHP">
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-        <option name="ValidateXdebugSetup" enabled="true" />
-      </method>
+    <configuration default="false" name="MatchEngine" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false">
+        <pattern>
+          <option name="PATTERN" value="uk.ac.ebi.chebi.ontology.core.engine.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="uk.ac.ebi.chebi.ontology.core.engine.MatchEngine" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="ChemOntology" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="IndexGenerator" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false">
+        <pattern>
+          <option name="PATTERN" value="uk.ac.ebi.chebi.ontology.core.engine.cache.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="uk.ac.ebi.chebi.ontology.core.engine.cache.IndexGenerator" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="ChemOntology" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
     </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <method>
@@ -796,24 +846,6 @@
       </method>
     </configuration>
     <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" adl_options="" air_descriptor_path="" air_program_params="" air_publisher_id="" air_root_dir_path="" air_run_mode="AppDescriptor" browser_family="FIREFOX" class_name="" debugger_sdk="Module SDK" html_or_swf_file_path="" launcher_type="OSDefault" main_class_name="" method_name="" module_name="" output_log_level="" package_name="" player_path="FlashPlayer.exe" port="0" run_mode="HtmlOrSwfFile" run_trusted="false" scope="Class" socket_policy_port="0" url_to_launch="http://">
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -854,6 +886,24 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" />
       <option name="MAIN_CLASS_NAME" />
@@ -872,6 +922,27 @@
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GWT.ConfigurationType" factoryName="GWT Configuration">
+      <module name="" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="FtpUpload" enabled="false">
+          <server_id />
+          <server_name />
+        </option>
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="ValidateXdebugSetup" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -893,27 +964,6 @@
       </option>
       <envs />
       <patterns />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="FtpUpload" enabled="false">
-          <server_id />
-          <server_name />
-        </option>
-        <option name="Maven.BeforeRunTask" enabled="false" />
-        <option name="ValidateXdebugSetup" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="GWT.ConfigurationType" factoryName="GWT Configuration">
-      <module name="" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -995,15 +1045,15 @@
       <method />
     </configuration>
     <list size="9">
-      <item index="0" class="java.lang.String" itemvalue="Application.XStreamDemo" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CDKConverterTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.PenicillinTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.PyridinesTest" />
-      <item index="4" class="java.lang.String" itemvalue="Applet.JChemPaintEditorApplet" />
-      <item index="5" class="java.lang.String" itemvalue="GWT Configuration.IOE" />
-      <item index="6" class="java.lang.String" itemvalue="GWT Configuration.Sample" />
-      <item index="7" class="java.lang.String" itemvalue="GWT Configuration.Ontology" />
-      <item index="8" class="java.lang.String" itemvalue="JUnit.DefinitionTest" />
+      <item index="0" class="java.lang.String" itemvalue="Query Language Console.Default" />
+      <item index="1" class="java.lang.String" itemvalue="Application.IndexReaderTest" />
+      <item index="2" class="java.lang.String" itemvalue="GWT Configuration.IOE" />
+      <item index="3" class="java.lang.String" itemvalue="GWT Configuration.Sample" />
+      <item index="4" class="java.lang.String" itemvalue="GWT Configuration.Ontology" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.DefinitionTest" />
+      <item index="6" class="java.lang.String" itemvalue="Applet.OntologyEditorApplet" />
+      <item index="7" class="java.lang.String" itemvalue="Application.MatchEngine" />
+      <item index="8" class="java.lang.String" itemvalue="Application.IndexGenerator" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1068,32 +1118,33 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="66" y="-8" width="1542" height="916" extended-state="6" />
-    <editor active="false" />
+    <frame x="66" y="-8" width="1542" height="916" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33017817" sideWeight="0.7382979" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.71842104" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25526315" sideWeight="0.9980843" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299458" sideWeight="0.5868421" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.59210527" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30394736" sideWeight="0.9980843" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299458" sideWeight="0.5868421" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3223684" sideWeight="0.0" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26578948" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28116214" sideWeight="0.325" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20325203" sideWeight="0.225" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299458" sideWeight="0.21710527" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39955482" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3299458" sideWeight="0.0" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3360996" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3306233" sideWeight="0.5868421" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41315788" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276316" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="IntelliJad Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287234" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263158" sideWeight="0.9990628" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43289474" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="IntelliJad Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287234" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1179,88 +1230,116 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/fragment/AttachedGroup.java">
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/server/DefinitionServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="14" selection-start="529" selection-end="529" vertical-scroll-proportion="0.4" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/openscience/jchempaint/action/OpenAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="72" selection-start="4147" selection-end="4147" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/openscience/jchempaint/action/NewAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="41" selection-start="2313" selection-end="2313" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/openscience/jchempaint/action/RGroupAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="169" column="52" selection-start="6939" selection-end="6939" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/openscience/jchempaint/renderer/generators/FragmentGroupGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="63" selection-start="1180" selection-end="1180" vertical-scroll-proportion="0.039915968" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/openscience/jchempaint/controller/undoredo/ChangeAtomSymbolEdit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="0" selection-start="2960" selection-end="2960" vertical-scroll-proportion="0.33193278" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/openscience/jchempaint/controller/ControllerHub.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2407" column="53" selection-start="83118" selection-end="83118" vertical-scroll-proportion="1.157563" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/openscience/jchempaint/dialog/editor/AtomEditor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="13" selection-start="2039" selection-end="2039" vertical-scroll-proportion="-3.284464" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/openscience/jchempaint/action/FragmentGroupAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="12" selection-start="4531" selection-end="4531" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/openscience/jchempaint/rgroups/RGroupHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="338" column="16" selection-start="12313" selection-end="12313" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/openscience/jchempaint/resources/JChemPaintResources.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="0" selection-start="6675" selection-end="6675" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/openscience/jchempaint/resources/JCPGUI_applet.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="18" selection-start="5208" selection-end="5226" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/openscience/jchempaint/JCPMenuTextMaker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="361" column="62" selection-start="19678" selection-end="19678" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/openscience/jchempaint/dialog/EnterElementSwingModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="39" selection-start="4169" selection-end="4169" vertical-scroll-proportion="0.0">
+        <state line="25" column="151" selection-start="942" selection-end="942" vertical-scroll-proportion="0.04761905">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/openscience/cdk/ontology/FragmentGroup.java">
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/engine/cache/CacheProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="31" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0">
+        <state line="83" column="34" selection-start="2994" selection-end="2994" vertical-scroll-proportion="0.22305764">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/work/lib-jars/cdk-src+libs-1.3.7/src/main/org/openscience/cdk/isomorphism/UniversalIsomorphismTester.java">
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/DefinitionEditor.ui.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="13" selection-start="5340" selection-end="5340" vertical-scroll-proportion="-1.3464235">
+        <state line="32" column="44" selection-start="1287" selection-end="1287" vertical-scroll-proportion="1.5238096">
+          <folding>
+            <marker date="1303822710147" expanded="true" signature="209:251" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/engine/MatchEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="153" selection-start="3661" selection-end="3661" vertical-scroll-proportion="0.45854923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/matcher/DefinitionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="12" selection-start="1022" selection-end="1022" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/SearchResultTable.ui.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="64" selection-start="127" selection-end="183" vertical-scroll-proportion="0.0952381">
+          <folding>
+            <marker date="1303693961477" expanded="true" signature="217:319" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/matcher/fragment/SkeletonMatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="412" selection-end="412" vertical-scroll-proportion="0.04761905">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/SearchResultTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="0" selection-start="3869" selection-end="3869" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/matcher/fragment/ArbitraryPartMatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="147" selection-start="878" selection-end="878" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/engine/cache/IndexGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="6" selection-start="4309" selection-end="4309" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/applications/gwt-2.2.0/gwt-user.jar!/com/google/gwt/user/cellview/client/CellList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="432" column="42" selection-start="13809" selection-end="13809" vertical-scroll-proportion="0.9047619">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/DefinitionPreview.ui.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="47" selection-start="629" selection-end="629" vertical-scroll-proportion="0.47619048">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/fragment/Atom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="28" selection-start="243" selection-end="243" vertical-scroll-proportion="0.3809524">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/DefinitionEditor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="35" selection-start="2402" selection-end="2402" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/web/client/ui/DefinitionPreview.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="13" selection-start="1340" selection-end="1340" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/ebi/chebi/ontology/core/definition/Definition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="151" selection-start="245" selection-end="245" vertical-scroll-proportion="0.42857143">
           <folding />
         </state>
       </provider>
@@ -1271,10 +1350,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>ChemOntology:GWT</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1304,14 +1385,25 @@
           </splitter-proportions>
         </settings>
       </state>
-      <state key="ModuleStructureConfigurable.UI">
+      <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>ChemOntology</last-edited>
+          <last-edited>1.6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>GWT|ChemOntology</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>

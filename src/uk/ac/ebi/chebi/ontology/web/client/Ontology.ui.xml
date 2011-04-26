@@ -2,14 +2,17 @@
              xmlns:g='urn:import:com.google.gwt.user.client.ui'
              xmlns:o='urn:import:uk.ac.ebi.chebi.ontology.web.client.ui'
         >
-    <g:DockLayoutPanel unit="EM">
-        <g:north size='5'>
-            <g:Label>Ontology Editor</g:Label>
+    <g:DockLayoutPanel unit="PX">
+        <g:north size='75'>
+            <g:HTMLPanel>
+                <img src="http://www.ebi.ac.uk/chebi/images/ChEBI_logo_mid.gif" alt="ChEBI"/>
+            </g:HTMLPanel>
+            <!--<g:Label>Ontology Editor</g:Label>-->
         </g:north>
         <g:center>
             <o:MainFrame ui:field="mainFrame" />
         </g:center>
-        <g:west size='15'>
+        <g:west size='150'>
             <o:SideBar ui:field='sideBar'/>
         </g:west>
     </g:DockLayoutPanel>

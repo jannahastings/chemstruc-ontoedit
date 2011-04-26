@@ -29,13 +29,13 @@ public class OntologyEditorApplet extends JChemPaintAbstractApplet implements JC
         this.add(jChemPaintPanel);
     }
 
-    public void setSkeleton(Skeleton skeleton) {
-        chemModel.getMoleculeSet().removeAllAtomContainers();
-        try {
-            chemModel.getMoleculeSet().addAtomContainer(new CDKConverter().toCDKAtomContainer(skeleton));
-        } catch (CDKException e) {
-            e.printStackTrace();
-        }
+    public void setSkeleton(String skeletonStr) {
+//        chemModel.getMoleculeSet().removeAllAtomContainers();
+//        try {
+//            chemModel.getMoleculeSet().addAtomContainer(new CDKConverter().toCDKAtomContainer(skeleton));
+//        } catch (CDKException e) {
+//            e.printStackTrace();
+//        }
     }
 
     public Skeleton getSkeleton() {

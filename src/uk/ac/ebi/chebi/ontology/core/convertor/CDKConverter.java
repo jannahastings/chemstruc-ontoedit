@@ -2,6 +2,7 @@ package uk.ac.ebi.chebi.ontology.core.convertor;
 
 import org.openscience.cdk.AtomContainer;
 import org.openscience.cdk.CDKConstants;
+import org.openscience.cdk.aromaticity.CDKHueckelAromaticityDetector;
 import org.openscience.cdk.exception.CDKException;
 import org.openscience.cdk.interfaces.IAtom;
 import org.openscience.cdk.interfaces.IAtomContainer;
@@ -51,9 +52,9 @@ public class CDKConverter {
 
         for(Atom atom:simpleAtomContainer.atoms){
             IAtom cdkAtom=new org.openscience.cdk.Atom();
-            cdkAtom.setSymbol(atom.symbol);
-            cdkAtom.setCharge(atom.charge);
-            cdkAtom.setFlag(CDKConstants.ISAROMATIC, atom.isAromatic);
+            if(atom.symbol!=null)cdkAtom.setSymbol(atom.symbol);
+            if(atom.charge!=null)cdkAtom.setCharge(atom.charge);
+            if(atom.isAromatic!=null)cdkAtom.setFlag(CDKConstants.ISAROMATIC, atom.isAromatic);
             ac.addAtom(cdkAtom);
             atomMap.put(atom,cdkAtom);
         }
@@ -65,6 +66,7 @@ public class CDKConverter {
             cdkBond.setFlag(CDKConstants.ISAROMATIC,bond.isAromatic);
         }
         AtomContainerManipulator.percieveAtomTypesAndConfigureUnsetProperties(ac);
+        CDKHueckelAromaticityDetector.detectAromaticity(ac);
         return ac;
     }
     private Bond.Order fromCDKBondOrder(IBond.Order cdkBondOrder){

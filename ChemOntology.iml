@@ -10,8 +10,12 @@
       <configuration>
         <setting name="compilerMaxHeapSize" value="128" />
         <setting name="gwtScriptOutputStyle" value="DETAILED" />
-        <setting name="gwtSdkUrl" value="file://C:/applications/gwt-2.1.0" />
+        <setting name="gwtSdkUrl" value="file://C:/applications/gwt-2.2.0" />
         <setting name="webFacet" value="Web" />
+        <packaging>
+          <module name="uk.ac.ebi.chebi.ontology.core.Definition" path="/uk.ac.ebi.chebi.ontology.core.Definition" />
+          <module name="uk.ac.ebi.chebi.ontology.web.Ontology" path="/uk.ac.ebi.chebi.ontology.web.Ontology" />
+        </packaging>
       </configuration>
     </facet>
     <facet type="web" name="Web">

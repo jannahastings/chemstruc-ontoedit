@@ -2,11 +2,16 @@ package uk.ac.ebi.chebi.ontology.web.server;
 
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 import com.thoughtworks.xstream.XStream;
+import uk.ac.ebi.chebi.ontology.core.chebi.ChEBIInterface;
 import uk.ac.ebi.chebi.ontology.core.definition.Definition;
+import uk.ac.ebi.chebi.ontology.core.definition.chebi.ChEBICompound;
+import uk.ac.ebi.chebi.ontology.core.util.DatabaseUtil;
 import uk.ac.ebi.chebi.ontology.core.util.XStreamUtil;
 import uk.ac.ebi.chebi.ontology.web.client.DefinitionService;
 
 import java.io.*;
+import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,6 +42,13 @@ public class DefinitionServiceImpl extends RemoteServiceServlet implements Defin
     }
 
     public List<Definition> listAllDefinitions() {
+//        Connection conn=null;
+//        try {
+//            conn = DatabaseUtil.getConnection();
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//
         File rootDir=new File(rootPath);
         File[] files=rootDir.listFiles(new FilenameFilter() {
             public boolean accept(File dir, String name) {
@@ -65,6 +77,19 @@ public class DefinitionServiceImpl extends RemoteServiceServlet implements Defin
         } catch (IOException e) {
             e.printStackTrace();
             throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    public List<ChEBICompound> searchChEBI(String query) {
+        ChEBIInterface chEBIInterface=new ChEBIInterface();
+        try {
+            chEBIInterface.connectToDatabase();
+           return chEBIInterface.searchByText(query);
+        } catch (Exception e) {
+            return new ArrayList<ChEBICompound>();
+        } finally {
+            chEBIInterface.disconnectFromDatabase();
         }
     }
 }

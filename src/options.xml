@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<options>
+   <!-- location of O-R class to use and config files
+   a. OJB: orclasslocation = uk.ac.ebi.chebi.dbAccess.ojb.OjbDAOSource
+            descriptor = repository_chebi.xml (default)
+   b. Toplink: orclasslocation = uk.ac.ebi.chebi.dbAccess.or.toplink.ToplinkDAOSource
+            descriptor = compounds.xml -->
+   <orclasslocation location="uk.ac.ebi.chebi.persistence.or.toplink.ToplinkDAOSource" />
+   <descriptor location="uk.ac.ebi.chebi.persistence.or.toplink.ToplinkDeployment" />
+   <orDatabasePlatform location="org.eclipse.persistence.platform.database.OraclePlatform"/>
+   
+   <!--Database URL and passwords for the ChEBI database (development) -->
+<!--   <dbUrl location="jdbc:oracle:thin:@whatsupp:1521:orcl" />-->
+<!--   <dbUrl location="jdbc:oracle:thin:@rum.ebi.ac.uk:1541:CHEZTST" />  --> 
+<!--	<dbUrl location="jdbc:oracle:thin:@bourbon.ebi.ac.uk:1531:IDEV" /> -->
+<!--   <dbUrl location="jdbc:oracle:thin:@swan.ebi.ac.uk:1521:IWEB" />-->
+<!--   <dbUrl location="jdbc:oracle:thin:@pinga.ebi.ac.uk:1521:ZDEV" />-->
+<!--	<dbUrl location="jdbc:oracle:thin:@pisco.ebi.ac.uk:1521:ZTEST" />-->
+
+<!--   <dbSchemaName location="chebi_dev"/>
+   <dbUserName location="chebi_dev"/>
+   <dbPassword location="chebi_dev"/> -->
+   
+  	<dbUrl location="jdbc:oracle:thin:@localhost:1521:orcl" />
+    <dbSchemaName location="chebi"/>
+	<dbUserName location="chebi"/>
+	<dbPassword location="chebi"/>
+	<dbUserNameReadOnly location="chebi"/>
+    <dbPasswordReadOnly location="shabby"/>
+	<setSchemaString location="alter session set current_schema = chebi"/>
+
+<!-- 	<dbUrl location="jdbc:oracle:thin:@pernod.ebi.ac.uk:1561:CHEZPRO" />  -->
+<!--	<dbUrl location="jdbc:oracle:thin:@rum.ebi.ac.uk:1541:CHEZTST" />
+	<dbSchemaName location="chebi_dev"/>
+	<dbUserName location="chebi_dev"/>
+	<dbPassword location="chebi_dev"/> 
+	<dbUserNameReadOnly location="chebi_dev"/>
+    <dbPasswordReadOnly location="chebi_dev"/>
+	<setSchemaString location="alter session set current_schema = chebi_dev"/>-->
+   
+   <!-- <dbSchemaName location="chebi"/>
+   <dbUserName location="chebi"/>
+   <dbPassword location="shabby"/>   -->   
+   
+   <driver location="oracle.jdbc.driver.OracleDriver"/>
+
+    <!-- For read only connections use this username and Password
+         If you don't want read only connections leave this blank. -->
+    <dbUserNameReadOnly location=""/>
+    <dbPasswordReadOnly location=""/>
+
+     <!-- Used to set the read and write connection pools for the database -->
+    <readMinNumberOfConnections location="1"/>
+    <readMaxNumberOfConnections location="10"/>
+    <writeMinNumberOfConnections location="1"/>
+    <writeMaxNumberOfConnections location="15"/>
+
+
+   <!-- source to be loaded into the database ie. kegg or intenz or co -->
+<!--   <sourceToLoad location="co"/>-->
+   <!-- Loaders to select choose one of the following options:
+   a. Oracle Prepared Statements : oracleLoader
+   b. JDBC Statements: jdbcLoader
+   c. Object Relational Loader: ORLoader -->
+<!--   <loaderType location="oracleLoader" />-->
+   <!-- Alters session to set to the correct schema ie. either chebi_dev or chebi_test
+      The name is taken from dbUserName above.
+      If this string is null then nothing is run.-->
+   <!--<setSchemaString location="alter session set current_schema = chebi"/>-->
+
+   <!-- Used in the toplinkDeployment Descriptor if you want to filter the EC and enzyme ids -->
+   <!-- If true then enter: true or false-->
+   <filterEC location="true"/>
+</options>

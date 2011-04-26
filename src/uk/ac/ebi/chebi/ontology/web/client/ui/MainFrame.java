@@ -26,6 +26,8 @@ public class MainFrame extends Composite{
         initWidget(tabLayoutPanel);
     }
 
+
+
     public void addOntologyEditor(Definition definition){
         DefinitionEditor definitionEditor = new DefinitionEditor();
         definitionEditor.setDefinition(definition);
