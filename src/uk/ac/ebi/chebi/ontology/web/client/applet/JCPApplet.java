@@ -12,4 +12,6 @@ public interface JCPApplet extends Applet {
 //    public void setSkeleton(Skeleton skeleton);
 //    public Skeleton getSkeleton();
     public String getTestString();
+    public String getDefinitionString();
+    public void setDefinitionString(String definitionString);
 }

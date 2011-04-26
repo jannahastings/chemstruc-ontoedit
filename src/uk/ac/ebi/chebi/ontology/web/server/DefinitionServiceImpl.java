@@ -4,6 +4,7 @@ import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 import com.thoughtworks.xstream.XStream;
 import uk.ac.ebi.chebi.ontology.core.chebi.ChEBIInterface;
 import uk.ac.ebi.chebi.ontology.core.definition.Definition;
+import uk.ac.ebi.chebi.ontology.core.definition.IDefinitionPart;
 import uk.ac.ebi.chebi.ontology.core.definition.chebi.ChEBICompound;
 import uk.ac.ebi.chebi.ontology.core.util.DatabaseUtil;
 import uk.ac.ebi.chebi.ontology.core.util.XStreamUtil;
@@ -31,7 +32,9 @@ public class DefinitionServiceImpl extends RemoteServiceServlet implements Defin
         File file=new File(rootPath+id+".xml");
         if(file.exists()){
             try {
-                return (Definition) xStream.fromXML(new FileReader(file));
+                Definition definition = (Definition) xStream.fromXML(new FileReader(file));
+                definition.rootDefinition= (IDefinitionPart) xStream.fromXML(definition.rootDefinitionString);
+                return definition;
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
                 throw new RuntimeException(e);
@@ -71,6 +74,7 @@ public class DefinitionServiceImpl extends RemoteServiceServlet implements Defin
         XStream xStream= XStreamUtil.getAliasedXStream();
         try {
             FileWriter writer = new FileWriter(rootPath + definition.id + ".xml");
+            definition.rootDefinition= (IDefinitionPart) xStream.fromXML(definition.rootDefinitionString);
             xStream.toXML(definition, writer);
             writer.flush();
             writer.close();

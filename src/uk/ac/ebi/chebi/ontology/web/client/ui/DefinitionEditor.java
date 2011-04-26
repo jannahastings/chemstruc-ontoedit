@@ -72,8 +72,10 @@ public class DefinitionEditor extends Composite {
         definition.id= Integer.valueOf(tbId.getText());
         definition.name = tbName.getText();
         definition.comment = taComment.getText();
+        definition.rootDefinitionString=jcpWidget.getApplet().getDefinitionString();
+        Window.alert(definition.rootDefinitionString);
 //        definition.rootDefinition=jcpWidget.getApplet().getSkeleton();
-//        Window.alert(definition.rootDefinition.toString());
+//        Window.alert(jcpWidget.getApplet().getTestString());
 //        jcpWidget.getApplet().getTestString(new AsyncCallback<String>() {
 //            public void onFailure(Throwable throwable) {
 //                Window.alert(throwable.toString());
@@ -90,7 +92,7 @@ public class DefinitionEditor extends Composite {
         updateDataObject();
         DefinitionService.App.getInstance().saveDefinition(definition,new AsyncCallback<Void>() {
             public void onFailure(Throwable throwable) {
-
+                System.out.println(throwable);
             }
 
             public void onSuccess(Void aVoid) {

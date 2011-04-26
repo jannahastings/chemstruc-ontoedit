@@ -8,11 +8,13 @@ import org.openscience.cdk.interfaces.IMolecule;
 import org.openscience.cdk.interfaces.IMoleculeSet;
 import org.openscience.jchempaint.JChemPaintPanel;
 import uk.ac.ebi.chebi.ontology.core.convertor.CDKConverter;
+import uk.ac.ebi.chebi.ontology.core.definition.fragment.ArbitraryPart;
 import uk.ac.ebi.chebi.ontology.core.definition.fragment.Skeleton;
+import uk.ac.ebi.chebi.ontology.core.util.XStreamUtil;
 import uk.ac.ebi.chebi.ontology.web.client.applet.JCPApplet;
 
 public class OntologyEditorApplet extends JChemPaintAbstractApplet implements JCPApplet {
-    public static final String GUI_APPLET="applet";
+    public static final String GUI_APPLET = "applet";
     private JChemPaintPanel jChemPaintPanel;
     private IChemModel chemModel;
 
@@ -29,24 +31,48 @@ public class OntologyEditorApplet extends JChemPaintAbstractApplet implements JC
         this.add(jChemPaintPanel);
     }
 
-    public void setSkeleton(String skeletonStr) {
-//        chemModel.getMoleculeSet().removeAllAtomContainers();
-//        try {
-//            chemModel.getMoleculeSet().addAtomContainer(new CDKConverter().toCDKAtomContainer(skeleton));
-//        } catch (CDKException e) {
-//            e.printStackTrace();
-//        }
-    }
-
+    //    public void setSkeleton(String skeletonStr) {
+////        chemModel.getMoleculeSet().removeAllAtomContainers();
+////        try {
+////            chemModel.getMoleculeSet().addAtomContainer(new CDKConverter().toCDKAtomContainer(skeleton));
+////        } catch (CDKException e) {
+////            e.printStackTrace();
+////        }
+//    }
+//
     public Skeleton getSkeleton() {
         IAtomContainer atomContainer = chemModel.getMoleculeSet().getAtomContainer(0);
         System.out.println(atomContainer.getAtomCount());
-        Skeleton skeleton= (Skeleton) new CDKConverter().fromCDKAtomContainer(atomContainer, new Skeleton());
+        Skeleton skeleton = (Skeleton) new CDKConverter().fromCDKAtomContainer(atomContainer, new Skeleton());
         System.out.println(skeleton.atoms.size());
         return skeleton;
     }
 
+
     public String getTestString() {
         return "test";
+    }
+
+    @Override
+    public String getDefinitionString() {
+        try{
+            IAtomContainer atomContainer = chemModel.getMoleculeSet().getAtomContainer(0);
+            ArbitraryPart arbitraryPart = (ArbitraryPart) new CDKConverter().fromCDKAtomContainer(atomContainer, new ArbitraryPart());
+            return XStreamUtil.getAliasedXStream().toXML(arbitraryPart);
+        }catch (Exception e){
+            return "ERROR"+e;
+        }
+    }
+
+    @Override
+    public void setDefinitionString(String definitionString) {
+        ArbitraryPart arbitraryPart = (ArbitraryPart) XStreamUtil.getAliasedXStream().fromXML(definitionString);
+        chemModel.getMoleculeSet().removeAllAtomContainers();
+        try {
+            IAtomContainer atomContainer = new CDKConverter().toCDKAtomContainer(arbitraryPart);
+            chemModel.getMoleculeSet().addAtomContainer(atomContainer);
+        } catch (CDKException e) {
+            e.printStackTrace();
+        }
     }
 }

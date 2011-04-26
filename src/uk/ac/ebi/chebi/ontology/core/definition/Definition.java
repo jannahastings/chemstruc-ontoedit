@@ -7,4 +7,7 @@ public class Definition implements Serializable {
    public String name;
    public String comment;
    public IDefinitionPart rootDefinition;
+
+   //TMP USE
+   public String rootDefinitionString;
 }

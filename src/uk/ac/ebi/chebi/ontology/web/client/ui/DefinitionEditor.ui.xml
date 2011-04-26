@@ -17,7 +17,7 @@
             </g:HTMLPanel>
         </g:west>
         <g:center>
-            <g:VerticalPanel>
+            <g:VerticalPanel addStyleNames="margin-5px">
                 <g:HTMLPanel styleName="{style.part}">
                     <h2>Skeleton</h2>
                     <p>

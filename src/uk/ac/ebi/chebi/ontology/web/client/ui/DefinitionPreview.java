@@ -18,7 +18,7 @@ import uk.ac.ebi.chebi.ontology.core.definition.Definition;
 import uk.ac.ebi.chebi.ontology.core.definition.chebi.ChEBICompound;
 
 public class DefinitionPreview extends Composite {
-    private ChEBICompoundCell chEBICompoundCell;
+//    private ChEBICompoundCell chEBICompoundCell;
 
     interface DefinitionPreviewUiBinder extends UiBinder<HTMLPanel, DefinitionPreview> {
     }
@@ -40,27 +40,25 @@ public class DefinitionPreview extends Composite {
 //    private Definition
 
     public DefinitionPreview() {
-        chEBICompoundCell = new ChEBICompoundCell();
+//        chEBICompoundCell = new ChEBICompoundCell();
         HTMLPanel rootElement = ourUiBinder.createAndBindUi(this);
         initWidget(rootElement);
     }
 
-    @UiFactory
-    CellList<ChEBICompound> makeCricketScores() {
-      return new CellList<ChEBICompound>(chEBICompoundCell);
-    }
+//    @UiFactory
+//    CellList<ChEBICompound> makeCricketScores() {
+////      return new CellList<ChEBICompound>(chEBICompoundCell);
+//    }
 
 
-    static class ChEBICompoundCell extends AbstractCell<ChEBICompound>{
-        @Override
-        public void render(Context context, ChEBICompound value, SafeHtmlBuilder sb) {
-            if (value == null) {
-              return;
-            }
-            sb.appendEscaped(value.name);
-            sb.appendEscaped(" CHEBI:");
-            sb.append(value.id);
-        }
-    }
+//    class ChEBICompoundCell extends AbstractCell<ChEBICompound>{
+//
+//        @Override
+//        public void render(Context context, ChEBICompound value, SafeHtmlBuilder sb) {
+//            if(value==null){
+//                return;
+//            }
+//        }
+//    }
 
 }
