@@ -2,9 +2,11 @@ package uk.ac.ebi.chebi.ontology.core.matcher;
 
 import uk.ac.ebi.chebi.ontology.core.definition.IDefinitionPart;
 import uk.ac.ebi.chebi.ontology.core.definition.fragment.ArbitraryPart;
+import uk.ac.ebi.chebi.ontology.core.definition.fragment.Skeleton;
 import uk.ac.ebi.chebi.ontology.core.definition.logical.And;
 import uk.ac.ebi.chebi.ontology.core.definition.logical.Or;
 import uk.ac.ebi.chebi.ontology.core.matcher.fragment.ArbitraryPartMatcher;
+import uk.ac.ebi.chebi.ontology.core.matcher.fragment.SkeletonMatcher;
 
 /**
  * This is the class to map IDefinitionPart to a IMatcher
@@ -23,6 +25,8 @@ public class DefinitionMapper {
     private static IMatcher mapIndividualPart(IDefinitionPart part){
         if(part instanceof ArbitraryPart){
             return new ArbitraryPartMatcher((ArbitraryPart) part);
+        }else if(part instanceof Skeleton){
+            return new SkeletonMatcher((Skeleton) part);
         }else if(part instanceof And){
 
         }else if(part instanceof Or){

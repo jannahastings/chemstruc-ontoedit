@@ -59,7 +59,7 @@ public class CacheProvider {
 
 
     public static CacheProvider getDefaultCacheReader() throws FileNotFoundException {
-        return new CacheProvider("data/ChEBI_complete.bin");
+        return new CacheProvider("C:\\Users\\chemhack\\IdeaProjects\\ChemOntology\\data\\ChEBI_complete.bin");
     }
 
     public void close(){

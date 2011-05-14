@@ -5,6 +5,8 @@ import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
 import com.google.gwt.core.client.GWT;
 import uk.ac.ebi.chebi.ontology.core.definition.Definition;
 import uk.ac.ebi.chebi.ontology.core.definition.chebi.ChEBICompound;
+import uk.ac.ebi.chebi.ontology.core.definition.match.MatchingResult;
+import uk.ac.ebi.chebi.ontology.core.engine.MatchEngine;
 
 import java.util.List;
 
@@ -36,6 +38,12 @@ public interface DefinitionService extends RemoteService {
     public List<ChEBICompound> getChildren(int id,int start,int end);
 
     public Definition getDefinition(int id);
+
+    public long validateDefinition(int id);
+
+    public double checkValidationProgress(long threadId);
+
+    public MatchingResult getValidationResult(long threadId);
 
 
 }

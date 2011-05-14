@@ -1,6 +1,29 @@
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
              xmlns:g='urn:import:com.google.gwt.user.client.ui'>
-    <g:HTMLPanel>
+    <g:ScrollPanel>
+        <g:HTMLPanel>
+            <h2>Progress
+                <g:Label ui:field="lbProgress">id:</g:Label>
+            </h2>
+            <table width="100%" style="vertical-align:top;">
+                <tr>
+                    <td width="33%">Matched and Classified</td>
+                    <td width="33%">Matched but Unclassified</td>
+                    <td width="33%">Unmatched but Classified</td>
+                </tr>
+                <tr>
+                    <td width="33%">
+                        <g:SimplePanel ui:field="wrapperMatchedClassified"></g:SimplePanel>
+                    </td>
+                    <td width="33%">
+                        <g:SimplePanel ui:field="wrapperMatchedUnclassified"></g:SimplePanel>
+                    </td>
+                    <td width="33%">
+                        <g:SimplePanel ui:field="wrapperUnmatchedClassified"></g:SimplePanel>
+                    </td>
+                </tr>
+            </table>
 
-    </g:HTMLPanel>
+        </g:HTMLPanel>
+    </g:ScrollPanel>
 </ui:UiBinder>

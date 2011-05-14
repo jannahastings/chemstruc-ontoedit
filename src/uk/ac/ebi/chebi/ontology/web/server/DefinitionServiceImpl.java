@@ -7,6 +7,8 @@ import uk.ac.ebi.chebi.ontology.core.chebi.ChEBIInterface;
 import uk.ac.ebi.chebi.ontology.core.definition.Definition;
 import uk.ac.ebi.chebi.ontology.core.definition.IDefinitionPart;
 import uk.ac.ebi.chebi.ontology.core.definition.chebi.ChEBICompound;
+import uk.ac.ebi.chebi.ontology.core.definition.match.MatchingResult;
+import uk.ac.ebi.chebi.ontology.core.engine.MatchEngine;
 import uk.ac.ebi.chebi.ontology.core.util.DatabaseUtil;
 import uk.ac.ebi.chebi.ontology.core.util.XStreamUtil;
 import uk.ac.ebi.chebi.ontology.web.client.DefinitionService;
@@ -14,7 +16,9 @@ import uk.ac.ebi.chebi.ontology.web.client.DefinitionService;
 import java.io.*;
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class DefinitionServiceImpl extends RemoteServiceServlet implements DefinitionService {
     private final String rootPath = "c:/tmp/";
@@ -177,4 +181,24 @@ public class DefinitionServiceImpl extends RemoteServiceServlet implements Defin
             chEBIInterface.disconnectFromDatabase();
         }
     }
+
+    Map<Long,MatchEngine.ValidationThread> threadMap=new HashMap<Long, MatchEngine.ValidationThread>();
+    public long validateDefinition(int id){
+        Definition definition = getDefinition(id);
+        if(definition.rootDefinitionString!=null){
+            definition.rootDefinition= (IDefinitionPart) XStreamUtil.getAliasedXStream().fromXML(definition.rootDefinitionString);
+        }
+        MatchEngine.ValidationThread validationThread = MatchEngine.matchDefinitionAsync(definition);
+        threadMap.put(validationThread.getId(),validationThread);
+        return validationThread.getId();
+    }
+
+    public double checkValidationProgress(long threadId){
+        return threadMap.get(threadId).getProgress();
+    }
+
+    public MatchingResult getValidationResult(long threadId){
+       return threadMap.get(threadId).getResult();
+    }
+
 }

@@ -28,11 +28,17 @@ public class MainFrame extends Composite{
 
 
 
-    public void openOntologyEditor(int classId){
+    public void openDefinitionEditor(int classId){
         DefinitionEditor definitionEditor = new DefinitionEditor(classId);
         //definitionEditor.setDefinition(definition);
         addClosableTab(definitionEditor,"Editor"+("-"+classId));
     }
+    public void openDefinitionValidator(int classId){
+        DefinitionValidator definitionValidator = new DefinitionValidator(classId);
+        //definitionEditor.setDefinition(definition);
+        addClosableTab(definitionValidator,"Validator"+("-"+classId));
+    }
+
 
     public void addClosableTab(final Widget widget,String title){
         FlowPanel titlePanel=new FlowPanel();

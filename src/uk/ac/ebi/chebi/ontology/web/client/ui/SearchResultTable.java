@@ -2,18 +2,13 @@ package uk.ac.ebi.chebi.ontology.web.client.ui;
 
 import com.google.gwt.cell.client.*;
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.safehtml.shared.SafeHtml;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.cellview.client.CellTable;
 import com.google.gwt.user.cellview.client.Column;
 import com.google.gwt.user.cellview.client.TextColumn;
-import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Composite;
-import com.google.gwt.user.client.ui.FlexTable;
-import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.HTMLPanel;
-import com.google.gwt.view.client.HasData;
 import com.google.gwt.view.client.ListDataProvider;
 import uk.ac.ebi.chebi.ontology.core.definition.chebi.ChEBICompound;
 import uk.ac.ebi.chebi.ontology.web.client.Ontology;
@@ -85,7 +80,7 @@ public class SearchResultTable extends Composite {
         editButtonColumn.setFieldUpdater(new FieldUpdater<ChEBICompound, String>() {
             @Override
             public void update(int index, ChEBICompound object, String value) {
-                Ontology.App.getInstance().getMainFrame().openOntologyEditor(object.id);
+                Ontology.App.getInstance().getMainFrame().openDefinitionEditor(object.id);
             }
         });
         cellTable.addColumn(editButtonColumn,"Action");
@@ -100,7 +95,7 @@ public class SearchResultTable extends Composite {
         validateButtonColumn.setFieldUpdater(new FieldUpdater<ChEBICompound, String>() {
             @Override
             public void update(int index, ChEBICompound object, String value) {
-                Ontology.App.getInstance().getMainFrame().openOntologyEditor(object.id);
+                Ontology.App.getInstance().getMainFrame().openDefinitionValidator(object.id);
             }
         });
         cellTable.addColumn(validateButtonColumn,"Action");

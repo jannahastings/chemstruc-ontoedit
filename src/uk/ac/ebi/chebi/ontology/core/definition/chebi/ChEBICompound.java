@@ -8,7 +8,7 @@ public class ChEBICompound implements Serializable{
     public String textDefinition;
     public boolean hasProgrammaticDefinition;
     public String status;
-    public int childrenCount;
+    public int childrenCount=0;
     public String structure;
 
     public ChEBICompound(){

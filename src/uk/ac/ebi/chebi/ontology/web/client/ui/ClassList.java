@@ -31,27 +31,27 @@ public class ClassList extends Composite {
     }
 
     public void refreshClassList() {
-        DefinitionService.App.getInstance().listAllDefinitions(new AsyncCallback<List<Definition>>() {
-            public void onFailure(Throwable throwable) {
-                verticalPanel.clear();
-                verticalPanel.add(new Label("Error Loading Ontology List, " + throwable.getMessage()));
-            }
-
-            public void onSuccess(List<Definition> definitions) {
-                verticalPanel.clear();
-                if(definitions!=null){
-                    for(final Definition definition:definitions){
-                        Label label = new Label(definition.name);
-                        label.addClickHandler(new ClickHandler() {
-                            public void onClick(ClickEvent event) {
-                                Ontology.App.getInstance().getMainFrame().openOntologyEditor(definition.id);
-                            }
-                        });
-                        verticalPanel.add(label);
-                    }
-                }
-            }
-        });
+//        DefinitionService.App.getInstance().listAllDefinitions(new AsyncCallback<List<Definition>>() {
+//            public void onFailure(Throwable throwable) {
+//                verticalPanel.clear();
+//                verticalPanel.add(new Label("Error Loading Ontology List, " + throwable.getMessage()));
+//            }
+//
+//            public void onSuccess(List<Definition> definitions) {
+//                verticalPanel.clear();
+//                if(definitions!=null){
+//                    for(final Definition definition:definitions){
+//                        Label label = new Label(definition.name);
+//                        label.addClickHandler(new ClickHandler() {
+//                            public void onClick(ClickEvent event) {
+//                                Ontology.App.getInstance().getMainFrame().openDefinitionEditor(definition.id);
+//                            }
+//                        });
+//                        verticalPanel.add(label);
+//                    }
+//                }
+//            }
+//        });
     }
 
 

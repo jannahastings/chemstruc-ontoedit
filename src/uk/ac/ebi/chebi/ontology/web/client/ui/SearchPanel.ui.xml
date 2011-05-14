@@ -4,8 +4,8 @@
         <g:HTMLPanel>
                 <g:DecoratorPanel>
                     <g:HTMLPanel>
-                        <h3>Enter a name or formula to search for it</h3>
-                        <g:TextBox ui:field="tbQuery">allen*</g:TextBox>
+                        <h3>Enter a name or formula or ChEBI ID to search for it</h3>
+                        <g:TextBox ui:field="tbQuery">35500</g:TextBox>
                         <g:Button ui:field="btSearch">Search</g:Button>
                     </g:HTMLPanel>
                 </g:DecoratorPanel>
