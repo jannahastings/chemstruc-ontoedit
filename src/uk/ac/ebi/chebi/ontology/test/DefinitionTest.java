@@ -17,9 +17,9 @@ public class DefinitionTest extends TestCase{
         definition.comment="Pyrimidine is a heterocyclic aromatic organic compound similar to benzene and pyridine, containing two nitrogen atoms at positions 1 and 3 of the six-member ring.";
         SmilesParser parser = new SmilesParser(DefaultChemObjectBuilder.getInstance());
         IAtomContainer ac=parser.parseSmiles("c1cncnc1");
-        Skeleton skeleton=new Skeleton();
-        skeleton = (Skeleton) new CDKConverter().fromCDKAtomContainer(ac,skeleton);
-        definition.rootDefinition= skeleton;
+        Skeleton rootStructure =new Skeleton();
+        rootStructure = (Skeleton) new CDKConverter().fromCDKAtomContainer(ac, rootStructure);
+        definition.rootDefinition= rootStructure;
 
         System.out.println(XStreamUtil.getAliasedXStream().toXML(definition));
     }

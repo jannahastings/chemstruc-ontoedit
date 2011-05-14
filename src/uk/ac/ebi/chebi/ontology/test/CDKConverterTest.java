@@ -3,8 +3,10 @@ package uk.ac.ebi.chebi.ontology.test;
 import com.thoughtworks.xstream.XStream;
 import junit.framework.TestCase;
 import org.openscience.cdk.DefaultChemObjectBuilder;
+import org.openscience.cdk.exception.CDKException;
 import org.openscience.cdk.exception.InvalidSmilesException;
 import org.openscience.cdk.interfaces.IAtomContainer;
+import org.openscience.cdk.smiles.SmilesGenerator;
 import org.openscience.cdk.smiles.SmilesParser;
 import uk.ac.ebi.chebi.ontology.core.convertor.CDKConverter;
 import uk.ac.ebi.chebi.ontology.core.definition.fragment.SimpleAtomContainer;
@@ -21,7 +23,7 @@ public class CDKConverterTest extends TestCase {
             System.out.println(xStream.toXML(simpleAtomContainer));
     }
 
-    public void testToCDKAtomContainer() throws InvalidSmilesException {
+    public void testToCDKAtomContainer() throws CDKException {
         SmilesParser parser = new SmilesParser(DefaultChemObjectBuilder.getInstance());
         IAtomContainer ac=parser.parseSmiles("CCCc1ccccc1");
         CDKConverter converter=new CDKConverter();
@@ -30,6 +32,8 @@ public class CDKConverterTest extends TestCase {
         String xml = xStream.toXML(simpleAtomContainer);
         SimpleAtomContainer simpleAtomContaine2r= (SimpleAtomContainer) xStream.fromXML(xml);
         System.out.println(xStream.toXML(simpleAtomContaine2r));
+        SmilesGenerator generator=new SmilesGenerator(true);
+        System.out.println(generator.createSMILES(converter.toCDKAtomContainer(simpleAtomContaine2r)));
     }
 
 }

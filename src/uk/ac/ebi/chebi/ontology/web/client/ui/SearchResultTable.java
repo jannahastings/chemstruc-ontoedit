@@ -16,6 +16,7 @@ import com.google.gwt.user.client.ui.HTMLPanel;
 import com.google.gwt.view.client.HasData;
 import com.google.gwt.view.client.ListDataProvider;
 import uk.ac.ebi.chebi.ontology.core.definition.chebi.ChEBICompound;
+import uk.ac.ebi.chebi.ontology.web.client.Ontology;
 
 import java.util.List;
 
@@ -84,10 +85,26 @@ public class SearchResultTable extends Composite {
         editButtonColumn.setFieldUpdater(new FieldUpdater<ChEBICompound, String>() {
             @Override
             public void update(int index, ChEBICompound object, String value) {
-                Window.alert("Button Clicked!");
+                Ontology.App.getInstance().getMainFrame().openOntologyEditor(object.id);
             }
         });
         cellTable.addColumn(editButtonColumn,"Action");
+
+        Column<ChEBICompound, String> validateButtonColumn = new Column<ChEBICompound, String>(
+                new ButtonCell()) {
+            @Override
+            public String getValue(ChEBICompound object) {
+                return "Validate";
+            }
+        };
+        validateButtonColumn.setFieldUpdater(new FieldUpdater<ChEBICompound, String>() {
+            @Override
+            public void update(int index, ChEBICompound object, String value) {
+                Ontology.App.getInstance().getMainFrame().openOntologyEditor(object.id);
+            }
+        });
+        cellTable.addColumn(validateButtonColumn,"Action");
+
 
     }
     public void setResult(List<ChEBICompound> list){

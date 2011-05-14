@@ -41,7 +41,7 @@ public class MatchEngine {
 
         ChEBIInterface chEBIInterface=new ChEBIInterface();
         chEBIInterface.connectToDatabase();
-        List<SearchResultTO> searchResultTOList= chEBIInterface.getCompoundsWithStructureInClass(definition.id);
+        List<SearchResultTO> searchResultTOList= chEBIInterface.getCompoundsWithStructureInClassLucene(definition.id);
 
         List<Integer> matchedIdsClassified=new ArrayList<Integer>();
         List<Integer> unmatchedIdsClassified=new ArrayList<Integer>();

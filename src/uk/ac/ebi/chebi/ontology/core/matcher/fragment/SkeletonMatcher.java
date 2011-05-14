@@ -5,16 +5,15 @@ import org.openscience.cdk.interfaces.IAtomContainer;
 import uk.ac.ebi.chebi.ontology.core.convertor.CDKConverter;
 import uk.ac.ebi.chebi.ontology.core.definition.fragment.Skeleton;
 import uk.ac.ebi.chebi.ontology.core.matcher.IMatcher;
-import uk.ac.ebi.chebi.ontology.core.util.Convertor;
 
 public class SkeletonMatcher implements IMatcher{
     Skeleton skeleton;
 
-    public Skeleton getSkeleton() {
+    public Skeleton getRootStructure() {
         return skeleton;
     }
 
-    public void setSkeleton(Skeleton skeleton) {
+    public void setRootStructure(Skeleton skeleton) {
         this.skeleton = skeleton;
     }
 

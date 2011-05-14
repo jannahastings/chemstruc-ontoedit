@@ -4,9 +4,9 @@
 //import uk.ac.ebi.chebi.ontology.core.matcher.FormulaMatcher;
 //import uk.ac.ebi.chebi.ontology.core.matcher.IMatcher;
 //import uk.ac.ebi.chebi.ontology.core.matcher.logical.AndMatcher;
-//import uk.ac.ebi.chebi.ontology.core.matcher.skeleton.FragmentMatcher;
-//import uk.ac.ebi.chebi.ontology.core.matcher.skeleton.RGroupMatcher;
-//import uk.ac.ebi.chebi.ontology.core.matcher.skeleton.SubStructureMatcher;
+//import uk.ac.ebi.chebi.ontology.core.matcher.rootStructure.FragmentMatcher;
+//import uk.ac.ebi.chebi.ontology.core.matcher.rootStructure.RGroupMatcher;
+//import uk.ac.ebi.chebi.ontology.core.matcher.rootStructure.SubStructureMatcher;
 //import org.w3c.dom.Document;
 //import org.w3c.dom.Node;
 //import org.w3c.dom.NodeList;

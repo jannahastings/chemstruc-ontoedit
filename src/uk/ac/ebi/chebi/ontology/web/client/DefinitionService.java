@@ -33,4 +33,9 @@ public interface DefinitionService extends RemoteService {
 
     public List<ChEBICompound> searchChEBI(String query);
 
+    public List<ChEBICompound> getChildren(int id,int start,int end);
+
+    public Definition getDefinition(int id);
+
+
 }

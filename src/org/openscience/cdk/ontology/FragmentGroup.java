@@ -12,7 +12,10 @@ import java.util.List;
 public class FragmentGroup extends ChemObject implements IChemObject, Serializable,IFragmentGroup {
     IAtomContainer rootStructure;
     List<AttachedGroup> attachedGroupList=new ArrayList<AttachedGroup>();
-
+    public enum GroupType{
+        Skeleton,ArbitraryPart
+    }
+    GroupType groupType;
     public void setRootStructure(IAtomContainer rootStructure) {
         this.rootStructure=rootStructure;
     }
@@ -29,17 +32,11 @@ public class FragmentGroup extends ChemObject implements IChemObject, Serializab
         this.attachedGroupList = attachedGroupList;
     }
 
-//    public void addAttachedGroup(AttachedGroup attachedGroup){
-//        this.attachedGroupList.add(attachedGroup);
-//    }
-//
-//    public int getAttachedGroupCount(){
-//        return this.attachedGroupList.size();
-//    }
-//
-//    public AttachedGroup getAttachedGroup(int i){
-//        return this.attachedGroupList.get(i);
-//    }
+    public GroupType getGroupType() {
+        return groupType;
+    }
 
-
+    public void setGroupType(GroupType groupType) {
+        this.groupType = groupType;
+    }
 }

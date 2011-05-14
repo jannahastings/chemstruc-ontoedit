@@ -1,3 +1,0 @@
-<definition id="pyridines" comment="Organic molecules with pyridine skeleton">
-    <fragment is_skeleton="true" file_format="smiles" match_type="substructure">c1ccncc1</fragment>
-</definition>

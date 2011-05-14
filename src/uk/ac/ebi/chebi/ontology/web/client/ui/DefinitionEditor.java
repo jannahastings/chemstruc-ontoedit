@@ -33,58 +33,67 @@ public class DefinitionEditor extends Composite {
     }
 
     private static Binder ourUiBinder = GWT.create(Binder.class);
-    @UiField
-    TextBox tbName;
-    @UiField
-    TextArea taComment;
-    @UiField
-    TextBox tbId;
+
     @UiField
     Button btSave;
     @UiField
     JCPWidget jcpWidget;
     @UiField
     Button btPreview;
+    @UiField
+    SimplePanel westPanel;
+    @UiField
+    Label lbId;
+    @UiField
+    Label lbName;
+    @UiField
+    Label lbTextDefinition;
 
+    int classId;
 
-    public DefinitionEditor() {
+    public DefinitionEditor(int classId) {
+        this.classId=classId;
         DockLayoutPanel rootElement = ourUiBinder.createAndBindUi(this);
         initWidget(rootElement);
+//
+        loadDefinition(classId);
+    }
+
+    public void loadDefinition(int classId){
+        DefinitionService.App.getInstance().getDefinition(classId,new AsyncCallback<Definition>() {
+            @Override
+            public void onFailure(Throwable caught) {
+                caught.printStackTrace();
+            }
+
+            @Override
+            public void onSuccess(Definition result) {
+                System.out.println(result);
+                setDefinition(result);
+            }
+        });
     }
 
     public void setDefinition(Definition definition) {
         this.definition = definition;
+        westPanel.setWidget(new ChildrenList(classId));
         refreshUI();
     }
 
     private void refreshUI() {
-        if(definition.id==null){ //Enable edit if is a new class
-            tbId.setEnabled(true);
-        }else{
-            tbId.setText(String.valueOf(definition.id));
-            tbId.setEnabled(false);
-        }
-        tbName.setText(definition.name);
-        taComment.setText(definition.comment);
+        lbId.setText(String.valueOf(definition.id));
+        lbName.setText(definition.name);
+        lbTextDefinition.setText(definition.comment);
     }
 
     private void updateDataObject() {
-        definition.id= Integer.valueOf(tbId.getText());
-        definition.name = tbName.getText();
-        definition.comment = taComment.getText();
+//        definition.id= Integer.valueOf(lbId.getText());
+//        definition.name = lbName.getText();
+
         definition.rootDefinitionString=jcpWidget.getApplet().getDefinitionString();
         Window.alert(definition.rootDefinitionString);
-//        definition.rootDefinition=jcpWidget.getApplet().getSkeleton();
+//        definition.rootDefinition=jcpWidget.getApplet().getRootStructure();
 //        Window.alert(jcpWidget.getApplet().getTestString());
-//        jcpWidget.getApplet().getTestString(new AsyncCallback<String>() {
-//            public void onFailure(Throwable throwable) {
-//                Window.alert(throwable.toString());
-//            }
-//
-//            public void onSuccess(String s) {
-//                Window.alert(s);
-//            }
-//        });
     }
 
     @UiHandler("btSave")
@@ -98,15 +107,17 @@ public class DefinitionEditor extends Composite {
             public void onSuccess(Void aVoid) {
                 refreshUI();
                 Ontology.App.getInstance().getSideBar().getClassList().refreshClassList();
-//                Window.alert("Saved");
             }
         });
     }
 
     @UiHandler("btPreview")
     void handleBTPreviewClick(ClickEvent event){
-        updateDataObject();
-        Ontology.App.getInstance().getMainFrame().addClosableTab(new DefinitionPreview(),"Preview"+definition.id);
+        Window.alert(jcpWidget.getApplet().setDefinitionString(definition.rootDefinitionString));
+
+
+//        updateDataObject();
+//        Ontology.App.getInstance().getMainFrame().addClosableTab(new DefinitionPreview(),"Preview"+definition.id);
     }
 
 }

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="chemontology" default="all">
   
-  
+    <property file="ant.properties"/>
+
   <property file="chemontology.properties"/>
   <!-- Uncomment the following property if no tests compilation is needed -->
   <!-- 
@@ -157,9 +158,24 @@
   <target name="jar" depends="compile.module.chemontology.production">
       <jar destfile="war/chemontology.jar">
          <fileset dir="${chemontology.output.dir}"/>
-
        </jar>
   </target>
+
+    <target name="signjar" depends="jar">
+        <signjar destDir="war"
+              alias="${certificatealias}"
+              storepass="${keystorepassphrase}"
+              keystore=".keystore"
+              lazy="false"
+              >
+            <path>
+              <fileset dir="war" includes="**/*.jar" />
+            </path>
+        </signjar>
+
+    </target>
+
+
   
   <target name="compile.module.chemontology.tests" depends="compile.module.chemontology.production" description="compile module ChemOntology; test classes" unless="skip.tests"/>
   

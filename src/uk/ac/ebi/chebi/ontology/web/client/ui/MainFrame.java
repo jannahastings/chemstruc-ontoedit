@@ -28,10 +28,10 @@ public class MainFrame extends Composite{
 
 
 
-    public void addOntologyEditor(Definition definition){
-        DefinitionEditor definitionEditor = new DefinitionEditor();
-        definitionEditor.setDefinition(definition);
-        addClosableTab(definitionEditor,"Editor"+(definition.id==null?"":("-"+definition.id)));
+    public void openOntologyEditor(int classId){
+        DefinitionEditor definitionEditor = new DefinitionEditor(classId);
+        //definitionEditor.setDefinition(definition);
+        addClosableTab(definitionEditor,"Editor"+("-"+classId));
     }
 
     public void addClosableTab(final Widget widget,String title){

@@ -10,4 +10,5 @@ public class Definition implements Serializable {
 
    //TMP USE
    public String rootDefinitionString;
+
 }

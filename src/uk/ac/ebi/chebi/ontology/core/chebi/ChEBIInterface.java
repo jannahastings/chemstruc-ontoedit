@@ -22,53 +22,59 @@ public class ChEBIInterface {
     Searcher searcher = null;
 
     public void connectToDatabase() throws Exception {
-        if(dao!=null)return;
+        if (dao != null) return;
         IDAOSourceChebi daoSource = DAOSourceFactory.getDAOSource();
         System.out.println(daoSource.getConfig());
-		dao = daoSource.getDAO();
+        dao = daoSource.getDAO();
         dao.open();
         searcher = new Searcher(dao);
 //		CvRelationType.assignCvRelationTypes((List) searcher.getAllCvRelationTypes());
 //		CvStatus.assignCvStatus((List) searcher.getAllCvStatus());
 
-   }
+    }
 
     public Compound getCompoundForId(Integer chebiId) throws Exception {
 
         Collection results = searcher.searchChebiId(chebiId);
 //        searcher.dao
-        if (!results.isEmpty())  {
-              for (Object o : results)  {
-                  Compound compound = (Compound) o;
-                  if (compound.getCompoundId().equals(chebiId)  ) {
-                      return compound;
-                  }
-              }
+        if (!results.isEmpty()) {
+            for (Object o : results) {
+                Compound compound = (Compound) o;
+                if (compound.getCompoundId().equals(chebiId)) {
+                    return compound;
+                }
+            }
         }
 
         return null;
     }
 
     public void disconnectFromDatabase() {
-        if (dao !=null) {
-            try { dao.close(); } catch (Exception e) {}finally{dao=null;}
+        if (dao != null) {
+            try {
+                dao.close();
+            } catch (Exception e) {
+            } finally {
+                dao = null;
+            }
         }
     }
 
     /**
      * Retrieves all the ChEBI compounds which have structures and are is-a children of the specified class.
+     *
      * @param classId
      * @return
      */
 
     private static final int MAX_RESULTS = 200;
 
-     public List<SearchResultTO> getCompoundsWithStructureInClass(Integer classId) throws Exception {
+    public List<SearchResultTO> getCompoundsWithStructureInClassLucene(Integer classId) throws Exception {
         SearchController controller = new SearchController();
 
         //Construct query bean for Lucene search on ontology children with structures
         QueryBean bean = new QueryBean();
-		bean.addIncomingOntologyQuery("CHEBI:"+classId,
+        bean.addIncomingOntologyQuery("CHEBI:" + classId,
                 ChebiIndexField.IS_A, QueryBean.QueryOperator.AND);
         bean.setChemicalStructure(true);
 
@@ -77,25 +83,40 @@ public class ChEBIInterface {
         return results;
     }
 
-    public List<ChEBICompound> getCompoundsWithStructure(Integer classId) throws Exception {
-           return null;
+    public List<ChEBICompound> getCompoundsWithStructureInClass(Integer classId) throws Exception {
+        return getCompoundsWithStructureInClass(classId,null,null);
+    }
+
+    public List<ChEBICompound> getCompoundsWithStructureInClass(Integer classId, Integer start, Integer end) throws Exception {
+        List<SearchResultTO> resultTOList = getCompoundsWithStructureInClassLucene(classId);
+        List<ChEBICompound> result=new ArrayList<ChEBICompound>();
+        if(resultTOList==null)return result;
+        resultTOList=resultTOList.subList(start == null ? 0 : start, end == null||end>resultTOList.size() ? resultTOList.size() : end);
+        for (SearchResultTO searchResultTO : resultTOList) {
+            result.add(getChEBICompound(Integer.valueOf(searchResultTO.getChebiId().replace("CHEBI:", ""))));
+        }
+        return result;
     }
 
     public List<ChEBICompound> searchByText(String query) throws Exception {
-        List<ChEBICompound> list=new ArrayList<ChEBICompound>();
+        List<ChEBICompound> list = new ArrayList<ChEBICompound>();
         SearchController controller = new SearchController();
         QueryBean bean = new QueryBean();
-        bean.addTextQuery(query,ChebiIndexField.ALL_FIELDS, QueryBean.QueryOperator.AND);
+        bean.addTextQuery(query, ChebiIndexField.ALL_FIELDS, QueryBean.QueryOperator.AND);
         SearchResultList results = controller.search(bean, MAX_RESULTS);
         for (SearchResultTO result : results) {
-            System.out.println("Found "+result.getChebiId()+" ("+result.getChebiName()+").");
-            Compound compound=getCompoundForId(Integer.valueOf(result.getChebiId().replace("CHEBI:","")));
-//            compound.getDefaultStructure().getStructure();
-            ChEBICompound chEBICompound=new ChEBICompound(compound.getCompoundId(),compound.getName(),compound.getDefinition(),false,compound.getStatus(),0);
+            System.out.println("Found " + result.getChebiId() + " (" + result.getChebiName() + ").");
+            ChEBICompound chEBICompound = getChEBICompound(Integer.valueOf(result.getChebiId().replace("CHEBI:", "")));
             list.add(chEBICompound);
         }
         return list;
     }
+
+    public ChEBICompound getChEBICompound(int id) throws Exception {
+        Compound compound = getCompoundForId(id);
+        return new ChEBICompound(compound.getCompoundId(), compound.getName(), compound.getDefinition(), false, compound.getStatus(), 0);
+    }
+
 
     public static void main(String[] args) throws Exception {
         ChEBIInterface interf = new ChEBIInterface();

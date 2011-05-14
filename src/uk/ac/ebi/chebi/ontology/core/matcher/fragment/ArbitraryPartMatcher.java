@@ -5,7 +5,6 @@ import org.openscience.cdk.interfaces.IAtomContainer;
 import org.openscience.cdk.isomorphism.UniversalIsomorphismTester;
 import uk.ac.ebi.chebi.ontology.core.convertor.CDKConverter;
 import uk.ac.ebi.chebi.ontology.core.definition.fragment.ArbitraryPart;
-import uk.ac.ebi.chebi.ontology.core.definition.fragment.Skeleton;
 import uk.ac.ebi.chebi.ontology.core.matcher.IMatcher;
 
 public class ArbitraryPartMatcher implements IMatcher{

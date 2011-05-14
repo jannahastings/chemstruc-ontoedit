@@ -1,6 +1,0 @@
-<definition id="hydrocarbon" comment="">
-    <formula exclude_others="true">
-        <element symbol="C"/>
-        <element symbol="H"/>
-    </formula>
-</definition>

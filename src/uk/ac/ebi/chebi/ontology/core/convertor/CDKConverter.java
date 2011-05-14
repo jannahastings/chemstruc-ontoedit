@@ -2,15 +2,16 @@ package uk.ac.ebi.chebi.ontology.core.convertor;
 
 import org.openscience.cdk.AtomContainer;
 import org.openscience.cdk.CDKConstants;
+import org.openscience.cdk.Molecule;
 import org.openscience.cdk.aromaticity.CDKHueckelAromaticityDetector;
 import org.openscience.cdk.exception.CDKException;
 import org.openscience.cdk.interfaces.IAtom;
 import org.openscience.cdk.interfaces.IAtomContainer;
 import org.openscience.cdk.interfaces.IBond;
+import org.openscience.cdk.ontology.AttachedGroup;
+import org.openscience.cdk.ontology.FragmentGroup;
 import org.openscience.cdk.tools.manipulator.AtomContainerManipulator;
-import uk.ac.ebi.chebi.ontology.core.definition.fragment.Atom;
-import uk.ac.ebi.chebi.ontology.core.definition.fragment.Bond;
-import uk.ac.ebi.chebi.ontology.core.definition.fragment.SimpleAtomContainer;
+import uk.ac.ebi.chebi.ontology.core.definition.fragment.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -22,6 +23,20 @@ import java.util.Map;
 public class CDKConverter {
     public SimpleAtomContainer fromCDKAtomContainer(IAtomContainer ac){
         return fromCDKAtomContainer(ac,new SimpleAtomContainer());
+    }
+    public FragmentGroup toCDKFragmentGroup(SimpleAtomContainer simpleAtomContainer) throws CDKException {
+        FragmentGroup fragmentGroup=new FragmentGroup();
+        if(simpleAtomContainer instanceof ArbitraryPart){
+            fragmentGroup.setRootStructure(toCDKAtomContainer(simpleAtomContainer));
+            fragmentGroup.setGroupType(FragmentGroup.GroupType.ArbitraryPart);
+        }else if(simpleAtomContainer instanceof Skeleton){
+            Skeleton skeleton =(Skeleton)simpleAtomContainer;
+            fragmentGroup.setRootStructure(toCDKAtomContainer(skeleton));
+            fragmentGroup.setGroupType(FragmentGroup.GroupType.Skeleton);
+//            fragmentGrou
+
+        }
+        return fragmentGroup;
     }
     public SimpleAtomContainer fromCDKAtomContainer(IAtomContainer ac,SimpleAtomContainer simpleAtomContainer){
         Map<IAtom,Atom> atomMap=new HashMap<IAtom,Atom>();
@@ -45,7 +60,7 @@ public class CDKConverter {
         return simpleAtomContainer;
     }
     public IAtomContainer toCDKAtomContainer(SimpleAtomContainer simpleAtomContainer) throws CDKException {
-        return toCDKAtomContainer(simpleAtomContainer,new AtomContainer());
+        return toCDKAtomContainer(simpleAtomContainer,new Molecule());
     }
     public IAtomContainer toCDKAtomContainer(SimpleAtomContainer simpleAtomContainer,IAtomContainer ac) throws CDKException {
         Map<Atom,IAtom> atomMap=new HashMap<Atom,IAtom>();
@@ -63,7 +78,9 @@ public class CDKConverter {
             IBond cdkBond=new org.openscience.cdk.Bond();
             cdkBond.setAtom(atomMap.get(bond.atoms.get(0)),0);
             cdkBond.setAtom(atomMap.get(bond.atoms.get(1)), 1);
-            cdkBond.setFlag(CDKConstants.ISAROMATIC,bond.isAromatic);
+            cdkBond.setOrder(toCDKBondOrder(bond.bondOrder));
+            ac.addBond(cdkBond);
+//            if(bond.isAromatic!=null)cdkBond.setFlag(CDKConstants.ISAROMATIC,bond.isAromatic);
         }
         AtomContainerManipulator.percieveAtomTypesAndConfigureUnsetProperties(ac);
         CDKHueckelAromaticityDetector.detectAromaticity(ac);

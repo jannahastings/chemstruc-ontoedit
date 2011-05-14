@@ -14,4 +14,8 @@ public interface DefinitionServiceAsync {
     void saveDefinition(Definition definition, AsyncCallback<Void> async);
 
     void searchChEBI(String query, AsyncCallback<List<ChEBICompound>> async);
+
+    void getChildren(int id, int start, int end, AsyncCallback<List<ChEBICompound>> async);
+
+    void getDefinition(int id, AsyncCallback<Definition> async);
 }

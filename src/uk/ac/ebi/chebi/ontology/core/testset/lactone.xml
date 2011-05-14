@@ -1,4 +1,0 @@
-<definition id="lactone" chebi_id="25000" comment="A cyclic ester of a hydroxy carboxylic acid, containing a 1-oxacycloalkan-2-one structure, or an analogue having unsaturation or heteroatoms replacing one or more carbon atoms of the ring.">
-    <ring id="ring1" size="any" />
-    <fragment is_skeleton="true" file_format="smiles" match_type="substructure">c1ccncc1</fragment>
-</definition>

@@ -40,7 +40,7 @@ public class Convertor {
 //            bondBufferBuilder.addAtom(atomBufferList.get(ac.getAtomNumber(cdkBond.getAtom(1))));
 //            acBufferBuilder.addBond(bondBufferBuilder.build());
 //        }
-//        acBufferBuilder.setAtomContainerType(BufferedObjects.AtomContainerBuffer.AtomContainerType.skeleton);
+//        acBufferBuilder.setAtomContainerType(BufferedObjects.AtomContainerBuffer.AtomContainerType.rootStructure);
 //
 //        return acBufferBuilder.build();
 //

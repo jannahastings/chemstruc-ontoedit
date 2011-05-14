@@ -10,7 +10,6 @@ import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.*;
 import uk.ac.ebi.chebi.ontology.core.definition.Definition;
 import uk.ac.ebi.chebi.ontology.web.client.DefinitionService;
-import uk.ac.ebi.chebi.ontology.web.client.DefinitionServiceAsync;
 import uk.ac.ebi.chebi.ontology.web.client.Ontology;
 
 import java.util.List;
@@ -45,7 +44,7 @@ public class ClassList extends Composite {
                         Label label = new Label(definition.name);
                         label.addClickHandler(new ClickHandler() {
                             public void onClick(ClickEvent event) {
-                                Ontology.App.getInstance().getMainFrame().addOntologyEditor(definition);
+                                Ontology.App.getInstance().getMainFrame().openOntologyEditor(definition.id);
                             }
                         });
                         verticalPanel.add(label);
@@ -58,6 +57,6 @@ public class ClassList extends Composite {
 
     @UiHandler("btAdd")
     void handleBtAddClick(ClickEvent event){
-        Ontology.App.getInstance().getMainFrame().addOntologyEditor(new Definition());
+//        Ontology.App.getInstance().getMainFrame().openOntologyEditor(new Definition());
     }
 }
