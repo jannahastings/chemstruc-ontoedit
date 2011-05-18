@@ -62,7 +62,7 @@
   <!-- Project Libraries -->
   
   <path id="library.gwt-user.classpath">
-    <pathelement location="${basedir}/../../../../applications/gwt-2.1.0/gwt-user.jar"/>
+    <pathelement location="${basedir}/../../../../applications/gwt-2.2.0/gwt-user.jar"/>
   </path>
   
   <path id="library.lib.classpath">

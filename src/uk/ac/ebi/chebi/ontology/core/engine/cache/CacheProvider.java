@@ -10,9 +10,7 @@ import org.openscience.cdk.nonotify.NNMolecule;
 import org.openscience.cdk.smiles.SmilesParser;
 
 import java.io.*;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class CacheProvider {
     RandomAccessFile binaryFile;
@@ -58,8 +56,13 @@ public class CacheProvider {
     }
 
 
-    public static CacheProvider getDefaultCacheReader() throws FileNotFoundException {
-        return new CacheProvider("C:\\Users\\chemhack\\IdeaProjects\\ChemOntology\\data\\ChEBI_complete.bin");
+    public static CacheProvider getDefaultCacheReader() throws IOException {
+        Properties prop = new Properties();
+        InputStream in = Object.class.getResourceAsStream("/ontology.properties");
+        prop.load(in);
+        in.close();
+        return new CacheProvider(prop.getProperty("chebi.ontology.matching.cache"));
+//        return new CacheProvider("C:\\Users\\chemhack\\IdeaProjects\\ChemOntology\\data\\ChEBI_complete.bin");
     }
 
     public void close(){
@@ -70,7 +73,7 @@ public class CacheProvider {
         }
     }
 
-    public static void main(String[] args) throws FileNotFoundException, CDKException {
+    public static void main(String[] args) throws IOException, CDKException {
         CacheProvider cacheProvider =getDefaultCacheReader();
 //        System.out.println(cacheProvider.get(9254));
 //        IAtomContainer query=cacheProvider.get(50658);

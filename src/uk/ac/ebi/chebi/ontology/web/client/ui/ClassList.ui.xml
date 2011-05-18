@@ -8,7 +8,7 @@
     <g:ScrollPanel>
         <g:VerticalPanel addStyleNames='{style.full}'>
             <g:HorizontalPanel>
-                <g:Button ui:field="btAdd">Add</g:Button>
+                <!--<g:Button ui:field="btAdd">Add</g:Button>-->
             </g:HorizontalPanel>
             <g:VerticalPanel addStyleNames='{style.full}' ui:field="verticalPanel">
                 <g:Label>Loading...</g:Label>

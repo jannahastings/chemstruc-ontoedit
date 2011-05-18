@@ -57,7 +57,7 @@ public class ValidationResultList extends Composite {
         sb.appendHtmlConstant("<table>");
 
         sb.appendHtmlConstant("<tr><td rowspan='3'>");
-        sb.appendHtmlConstant("<img src=\"http://www.ebi.ac.uk/chebi/displayImage.do?defaultImage=true&imageIndex=0&chebiId="+value.id+"\" width=150px height=150px />");
+        sb.appendHtmlConstant("<img src=\"/imageServlet?id="+value.id+"\" width=150px height=150px />");
 
         sb.appendHtmlConstant("</td>");
 

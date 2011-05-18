@@ -21,7 +21,7 @@ public class ClassList extends Composite {
     private static ClassListUiBinder ourUiBinder = GWT.create(ClassListUiBinder.class);
     @UiField
     VerticalPanel verticalPanel;
-    @UiField
+//    @UiField
     Button btAdd;
 
     public ClassList() {
@@ -55,7 +55,7 @@ public class ClassList extends Composite {
     }
 
 
-    @UiHandler("btAdd")
+//    @UiHandler("btAdd")
     void handleBtAddClick(ClickEvent event){
 //        Ontology.App.getInstance().getMainFrame().openOntologyEditor(new Definition());
     }

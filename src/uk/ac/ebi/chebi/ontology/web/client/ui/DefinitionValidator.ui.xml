@@ -11,7 +11,7 @@
                     <td width="33%">Matched but Unclassified</td>
                     <td width="33%">Unmatched but Classified</td>
                 </tr>
-                <tr>
+                <tr valign="top">
                     <td width="33%">
                         <g:SimplePanel ui:field="wrapperMatchedClassified"></g:SimplePanel>
                     </td>
