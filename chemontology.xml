@@ -1,228 +1,252 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="chemontology" default="all">
-  
+
     <property file="ant.properties"/>
 
-  <property file="chemontology.properties"/>
-  <!-- Uncomment the following property if no tests compilation is needed -->
-  <!-- 
-  <property name="skip.tests" value="true"/>
-   -->
-  
-  <!-- Compiler options -->
-  
-  <property name="compiler.debug" value="on"/>
-  <property name="compiler.generate.no.warnings" value="off"/>
-  <property name="compiler.args" value=""/>
-  <property name="compiler.max.memory" value="128m"/>
-  <patternset id="ignored.files">
-    <exclude name="**/CVS/**"/>
-    <exclude name="**/SCCS/**"/>
-    <exclude name="**/RCS/**"/>
-    <exclude name="**/rcs/**"/>
-    <exclude name="**/.DS_Store/**"/>
-    <exclude name="**/.svn/**"/>
-    <exclude name="**/.pyc/**"/>
-    <exclude name="**/.pyo/**"/>
-    <exclude name="**/*.pyc/**"/>
-    <exclude name="**/*.pyo/**"/>
-    <exclude name="**/.git/**"/>
-    <exclude name="**/*.hprof/**"/>
-    <exclude name="**/_svn/**"/>
-    <exclude name="**/.hg/**"/>
-    <exclude name="**/.sbas/**"/>
-    <exclude name="**/.IJI.*/**"/>
-    <exclude name="**/vssver.scc/**"/>
-    <exclude name="**/vssver2.scc/**"/>
-    <exclude name="**/*.lib/**"/>
-    <exclude name="**/*~/**"/>
-  </patternset>
-  <patternset id="library.patterns">
-    <include name="*.war"/>
-    <include name="*.ear"/>
-    <include name="*.zip"/>
-    <include name="*.swc"/>
-    <include name="*.egg"/>
-    <include name="*.jar"/>
-  </patternset>
-  <patternset id="compiler.resources">
-    <include name="**/?*.properties"/>
-    <include name="**/?*.xml"/>
-    <include name="**/?*.gif"/>
-    <include name="**/?*.png"/>
-    <include name="**/?*.jpeg"/>
-    <include name="**/?*.jpg"/>
-    <include name="**/?*.html"/>
-    <include name="**/?*.dtd"/>
-    <include name="**/?*.tld"/>
-    <include name="**/?*.ftl"/>
-  </patternset>
-  
-  
-  <!-- Project Libraries -->
-  
-  <path id="library.gwt-user.classpath">
-    <pathelement location="${basedir}/../../../../applications/gwt-2.2.0/gwt-user.jar"/>
-  </path>
-  
-  <path id="library.lib.classpath">
-    <fileset dir="${basedir}/lib">
-      <patternset refid="library.patterns"/>
-    </fileset>
-  </path>
-  
-  
-  <!-- Global Libraries -->
-  
-  
-  <!-- Application Server Libraries -->
-  
-  <!-- Modules -->
-  
-  
-  <!-- Module ChemOntology -->
-  
-  <dirname property="module.chemontology.basedir" file="${ant.file}"/>
-  
-  
-  
-  <property name="compiler.args.chemontology" value="${compiler.args}"/>
-  
-  <property name="chemontology.output.dir" value="${module.chemontology.basedir}/out/production/ChemOntology"/>
-  <property name="chemontology.testoutput.dir" value="${module.chemontology.basedir}/out/test/ChemOntology"/>
-  
-  <path id="chemontology.module.bootclasspath">
-    <!-- Paths to be included in compilation bootclasspath -->
-  </path>
-  
-  <path id="chemontology.module.production.classpath">
-    <path refid="library.lib.classpath"/>
-    <path refid="library.gwt-user.classpath"/>
-  </path>
-  
-  <path id="chemontology.runtime.production.module.classpath">
-    <pathelement location="${chemontology.output.dir}"/>
-    <path refid="library.lib.classpath"/>
-    <path refid="library.gwt-user.classpath"/>
-  </path>
-  
-  <path id="chemontology.module.classpath">
-    <pathelement location="${chemontology.output.dir}"/>
-    <path refid="library.lib.classpath"/>
-    <path refid="library.gwt-user.classpath"/>
-  </path>
-  
-  <path id="chemontology.runtime.module.classpath">
-    <pathelement location="${chemontology.testoutput.dir}"/>
-    <pathelement location="${chemontology.output.dir}"/>
-    <path refid="library.lib.classpath"/>
-    <path refid="library.gwt-user.classpath"/>
-  </path>
-  
-  
-  <patternset id="excluded.from.module.chemontology">
-    <patternset refid="ignored.files"/>
-  </patternset>
-  
-  <patternset id="excluded.from.compilation.chemontology">
-    <patternset refid="excluded.from.module.chemontology"/>
-  </patternset>
-  
-  <path id="chemontology.module.sourcepath">
-    <dirset dir="${module.chemontology.basedir}">
-      <include name="src"/>
-    </dirset>
-  </path>
-  
-  
-  <target name="compile.module.chemontology" depends="compile.module.chemontology.production,compile.module.chemontology.tests" description="Compile module ChemOntology"/>
-  
-  <target name="compile.module.chemontology.production" description="Compile module ChemOntology; production classes">
-    <mkdir dir="${chemontology.output.dir}"/>
-    <javac destdir="${chemontology.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true">
-      <compilerarg line="${compiler.args.chemontology}"/>
-      <bootclasspath refid="chemontology.module.bootclasspath"/>
-      <classpath refid="chemontology.module.production.classpath"/>
-      <src refid="chemontology.module.sourcepath"/>
-      <patternset refid="excluded.from.compilation.chemontology"/>
-    </javac>
-    
-    <copy todir="${chemontology.output.dir}">
-      <fileset dir="${module.chemontology.basedir}/src">
-        <patternset refid="compiler.resources"/>
-        <type type="file"/>
-      </fileset>
-    </copy>
-  </target>
+    <property file="chemontology.properties"/>
+    <!-- Uncomment the following property if no tests compilation is needed -->
+    <!--
+   <property name="skip.tests" value="true"/>
+    -->
 
-  <target name="jar" depends="compile.module.chemontology.production">
-      <jar destfile="war/chemontology.jar">
-         <fileset dir="${chemontology.output.dir}"/>
-       </jar>
-  </target>
+    <!-- Compiler options -->
+
+    <property name="compiler.debug" value="on"/>
+    <property name="compiler.generate.no.warnings" value="off"/>
+    <property name="compiler.args" value=""/>
+    <property name="compiler.max.memory" value="128m"/>
+    <patternset id="ignored.files">
+        <exclude name="**/CVS/**"/>
+        <exclude name="**/SCCS/**"/>
+        <exclude name="**/RCS/**"/>
+        <exclude name="**/rcs/**"/>
+        <exclude name="**/.DS_Store/**"/>
+        <exclude name="**/.svn/**"/>
+        <exclude name="**/.pyc/**"/>
+        <exclude name="**/.pyo/**"/>
+        <exclude name="**/*.pyc/**"/>
+        <exclude name="**/*.pyo/**"/>
+        <exclude name="**/.git/**"/>
+        <exclude name="**/*.hprof/**"/>
+        <exclude name="**/_svn/**"/>
+        <exclude name="**/.hg/**"/>
+        <exclude name="**/.sbas/**"/>
+        <exclude name="**/.IJI.*/**"/>
+        <exclude name="**/vssver.scc/**"/>
+        <exclude name="**/vssver2.scc/**"/>
+        <exclude name="**/*.lib/**"/>
+        <exclude name="**/*~/**"/>
+    </patternset>
+    <patternset id="library.patterns">
+        <include name="*.war"/>
+        <include name="*.ear"/>
+        <include name="*.zip"/>
+        <include name="*.swc"/>
+        <include name="*.egg"/>
+        <include name="*.jar"/>
+    </patternset>
+    <patternset id="compiler.resources">
+        <include name="**/?*.properties"/>
+        <include name="**/?*.xml"/>
+        <include name="**/?*.gif"/>
+        <include name="**/?*.png"/>
+        <include name="**/?*.jpeg"/>
+        <include name="**/?*.jpg"/>
+        <include name="**/?*.html"/>
+        <include name="**/?*.dtd"/>
+        <include name="**/?*.tld"/>
+        <include name="**/?*.ftl"/>
+    </patternset>
+
+
+    <!-- Project Libraries -->
+
+    <path id="library.gwt-user.classpath">
+        <pathelement location="${basedir}/../../../../applications/gwt-2.2.0/gwt-user.jar"/>
+    </path>
+
+    <path id="library.lib.classpath">
+        <fileset dir="${basedir}/lib">
+            <patternset refid="library.patterns"/>
+        </fileset>
+    </path>
+
+
+    <!-- Global Libraries -->
+
+
+    <!-- Application Server Libraries -->
+
+    <!-- Modules -->
+
+
+    <!-- Module ChemOntology -->
+
+    <dirname property="module.chemontology.basedir" file="${ant.file}"/>
+
+
+    <property name="compiler.args.chemontology" value="${compiler.args}"/>
+
+    <property name="chemontology.output.dir" value="${module.chemontology.basedir}/out/production/ChemOntology"/>
+    <property name="chemontology.testoutput.dir" value="${module.chemontology.basedir}/out/test/ChemOntology"/>
+
+    <path id="chemontology.module.bootclasspath">
+        <!-- Paths to be included in compilation bootclasspath -->
+    </path>
+
+    <path id="chemontology.module.production.classpath">
+        <path refid="library.lib.classpath"/>
+        <path refid="library.gwt-user.classpath"/>
+    </path>
+
+    <path id="chemontology.runtime.production.module.classpath">
+        <pathelement location="${chemontology.output.dir}"/>
+        <path refid="library.lib.classpath"/>
+        <path refid="library.gwt-user.classpath"/>
+    </path>
+
+    <path id="chemontology.module.classpath">
+        <pathelement location="${chemontology.output.dir}"/>
+        <path refid="library.lib.classpath"/>
+        <path refid="library.gwt-user.classpath"/>
+    </path>
+
+    <path id="chemontology.runtime.module.classpath">
+        <pathelement location="${chemontology.testoutput.dir}"/>
+        <pathelement location="${chemontology.output.dir}"/>
+        <path refid="library.lib.classpath"/>
+        <path refid="library.gwt-user.classpath"/>
+    </path>
+
+
+    <patternset id="excluded.from.module.chemontology">
+        <patternset refid="ignored.files"/>
+    </patternset>
+
+    <patternset id="excluded.from.compilation.chemontology">
+        <patternset refid="excluded.from.module.chemontology"/>
+    </patternset>
+
+    <path id="chemontology.module.sourcepath">
+        <dirset dir="${module.chemontology.basedir}">
+            <include name="src"/>
+        </dirset>
+    </path>
+
+
+    <target name="compile.module.chemontology"
+            depends="compile.module.chemontology.production,compile.module.chemontology.tests"
+            description="Compile module ChemOntology"/>
+
+    <target name="compile.module.chemontology.production" description="Compile module ChemOntology; production classes">
+        <mkdir dir="${chemontology.output.dir}"/>
+        <javac destdir="${chemontology.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}"
+               memorymaximumsize="${compiler.max.memory}" fork="true">
+            <compilerarg line="${compiler.args.chemontology}"/>
+            <bootclasspath refid="chemontology.module.bootclasspath"/>
+            <classpath refid="chemontology.module.production.classpath"/>
+            <src refid="chemontology.module.sourcepath"/>
+            <patternset refid="excluded.from.compilation.chemontology"/>
+        </javac>
+
+        <copy todir="${chemontology.output.dir}">
+            <fileset dir="${module.chemontology.basedir}/src">
+                <patternset refid="compiler.resources"/>
+                <type type="file"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="jar" depends="compile.module.chemontology.production">
+        <jar destfile="war/chemontology.jar">
+            <fileset dir="${chemontology.output.dir}"/>
+        </jar>
+    </target>
 
     <target name="signjar" depends="jar">
         <signjar destDir="war"
-              alias="${certificatealias}"
-              storepass="${keystorepassphrase}"
-              keystore=".keystore"
-              lazy="false"
-              >
+                 alias="${certificatealias}"
+                 storepass="${keystorepassphrase}"
+                 keystore=".keystore"
+                 lazy="false"
+                >
             <path>
-              <fileset dir="war" includes="**/*.jar" />
+                <fileset dir="war" includes="**/*.jar"/>
             </path>
         </signjar>
 
     </target>
 
 
-  
-  <target name="compile.module.chemontology.tests" depends="compile.module.chemontology.production" description="compile module ChemOntology; test classes" unless="skip.tests"/>
-  
-  <target name="clean.module.chemontology" description="cleanup module">
-    <delete dir="${chemontology.output.dir}"/>
-    <delete dir="${chemontology.testoutput.dir}"/>
-  </target>
-  
-  <property name="gwt.compiler.output.chemontology" value="${module.chemontology.basedir}/GWTCompilerOutput_chemontology"/>
-  
-  <!-- Run GWT compiler for GWT module ${gwt.module.name} -->
-  <target name="run.gwt.compiler.chemontology" description="Run GWT compiler">
-    <java fork="true" classname="com.google.gwt.dev.Compiler">
-      <jvmarg line="-Xmx128m"/>
-      <classpath>
-        <pathelement location="${gwt.sdk.home.chemontology}/gwt-dev.jar"/>
-        <path refid="chemontology.module.sourcepath"/>
-        <path refid="chemontology.module.classpath"/>
-      </classpath>
-      <arg value="-logLevel"/>
-      <arg value="WARN"/>
-      <arg value="-war"/>
-      <arg value="${gwt.compiler.output.chemontology}"/>
-      <arg value="-style"/>
-      <arg value="DETAILED"/>
-      <arg value="${gwt.module.name}"/>
-    </java>
-  </target>
-  
-  <target name="compile.gwt.chemontology" depends="compile.module.chemontology" description="Compile all GWT modules in module ChemOntology">
-    <property name="gwt.sdk.home.chemontology" value="${gwt.sdk.home}"/>
-    <antcall target="run.gwt.compiler.chemontology">
-      <param name="gwt.module.name" value="uk.ac.ebi.chebi.ontology.web.Ontology"/>
-    </antcall>
-  </target>
-  
-  <target name="clean.gwt.compiler.output" description="Clean GWT Compiler output directories">
-    <delete dir="${gwt.compiler.output.chemontology}"/>
-  </target>
-  
-  <target name="init" description="Build initialization">
-    <!-- Perform any build initialization in this target -->
-  </target>
-  
-  <target name="clean" depends="clean.module.chemontology, clean.gwt.compiler.output" description="cleanup all"/>
-  
-  <target name="build.modules" depends="init, clean, compile.gwt.chemontology" description="build all modules"/>
-  
-  <target name="all" depends="build.modules" description="build all"/>
+    <target name="compile.module.chemontology.tests" depends="compile.module.chemontology.production"
+            description="compile module ChemOntology; test classes" unless="skip.tests"/>
+
+    <target name="clean.module.chemontology" description="cleanup module">
+        <delete dir="${chemontology.output.dir}"/>
+        <delete dir="${chemontology.testoutput.dir}"/>
+        <delete dir="target"/>
+    </target>
+
+    <property name="gwt.compiler.output.chemontology"
+              value="${module.chemontology.basedir}/GWTCompilerOutput_chemontology"/>
+
+    <!-- Run GWT compiler for GWT module ${gwt.module.name} -->
+    <target name="run.gwt.compiler.chemontology" description="Run GWT compiler">
+        <java fork="true" classname="com.google.gwt.dev.Compiler">
+            <jvmarg line="-Xmx128m"/>
+            <classpath>
+                <pathelement location="${gwt.sdk.home.chemontology}/gwt-dev.jar"/>
+                <path refid="chemontology.module.sourcepath"/>
+                <path refid="chemontology.module.classpath"/>
+            </classpath>
+            <arg value="-logLevel"/>
+            <arg value="WARN"/>
+            <arg value="-war"/>
+            <arg value="${gwt.compiler.output.chemontology}"/>
+            <!--<arg value="-style"/>-->
+            <!--<arg value="DETAILED"/>-->
+            <arg value="${gwt.module.name}"/>
+        </java>
+    </target>
+
+    <target name="compile.gwt.chemontology" depends="compile.module.chemontology"
+            description="Compile all GWT modules in module ChemOntology">
+        <property name="gwt.sdk.home.chemontology" value="${gwt.sdk.home}"/>
+        <antcall target="run.gwt.compiler.chemontology">
+            <param name="gwt.module.name" value="uk.ac.ebi.chebi.ontology.web.Ontology"/>
+        </antcall>
+    </target>
+
+    <target name="clean.gwt.compiler.output" description="Clean GWT Compiler output directories">
+        <delete dir="${gwt.compiler.output.chemontology}"/>
+    </target>
+
+    <target name="init" description="Build initialization">
+        <!-- Perform any build initialization in this target -->
+    </target>
+
+    <target name="clean" depends="clean.module.chemontology, clean.gwt.compiler.output" description="cleanup all"/>
+
+    <target name="build.modules" depends="init, clean, compile.gwt.chemontology" description="build all modules"/>
+    <target name="war" depends="build.modules" description="make a war">
+        <mkdir dir="target"/>
+        <mkdir dir="target/war"/>
+        <mkdir dir="target/war/WEB-INF"/>
+        <mkdir dir="target/war/WEB-INF/classes"/>
+
+        <copy todir="target/war">
+            <fileset file="war/**"/>
+            <fileset file="${gwt.compiler.output.chemontology}/**"/>
+        </copy>
+        <copy todir="target/war/WEB-INF/classes">
+            <fileset file="${chemontology.output.dir}/**"/>
+        </copy>
+        <jar jarfile="target/all.war" basedir="target/war"/>
+
+    </target>
+
+
+    <target name="all" depends="war" description="build all"/>
+
+
 </project>
