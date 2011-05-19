@@ -3,6 +3,7 @@ package uk.ac.ebi.chebi.ontology.web.client;
 import com.google.gwt.user.client.rpc.RemoteService;
 import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.user.client.rpc.ServiceDefTarget;
 import uk.ac.ebi.chebi.ontology.core.definition.Definition;
 import uk.ac.ebi.chebi.ontology.core.definition.chebi.ChEBICompound;
 import uk.ac.ebi.chebi.ontology.core.definition.match.MatchingResult;
@@ -20,6 +21,8 @@ public interface DefinitionService extends RemoteService {
         private static final DefinitionServiceAsync ourInstance = (DefinitionServiceAsync) GWT.create(DefinitionService.class);
 
         public static DefinitionServiceAsync getInstance() {
+            ((ServiceDefTarget) ourInstance).setServiceEntryPoint( "uk.ac.ebi.chebi.ontology.web.Ontology/DefinitionService");
+
             return ourInstance;
         }
     }
